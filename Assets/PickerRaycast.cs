@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class raycast : MonoBehaviour
+public class PickerRaycast : MonoBehaviour
 {
     public float damage = 100f;
     public float range = 100f;
@@ -11,7 +11,7 @@ public class raycast : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKey(KeyCode.E))
         {
             Debug.Log("Shoot");
 
@@ -25,13 +25,13 @@ public class raycast : MonoBehaviour
 
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            Target target = hit.transform.GetComponent<Target>();
+            Picker picker = hit.transform.GetComponent<Picker>();
             Debug.Log("Shoot_1");
 
-            if (target != null)
+            if (picker != null)
             {
                 Debug.Log("Shoot_2");
-                target.TakeDamage(damage);
+                picker.TakeDamage(damage);
             }
         }
     }
