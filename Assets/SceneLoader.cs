@@ -6,11 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+
+    public string previousScene;
+
     void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.tag == "spaceship")
         {
             SceneManager.LoadScene("SpaceShip");
+        }
+        else if (collision.collider.tag == "backdoor")
+        {
+            SceneManager.LoadScene(previousScene);
         }
 
     }
