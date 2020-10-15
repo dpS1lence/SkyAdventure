@@ -13,6 +13,8 @@ public class raycast : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            //transform.Rotate(new Vector3(0f, 0f, 50f));
+            //transform.Rotate(new Vector4(0f, 0f, -50f));
             Debug.Log("Shoot");
 
             Shoot();
