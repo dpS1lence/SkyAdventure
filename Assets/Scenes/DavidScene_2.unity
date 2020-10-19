@@ -4750,6 +4750,7 @@ MonoBehaviour:
   damage: 100
   range: 100
   fpsCam: {fileID: 2069975406}
+  animationClip: {fileID: 1460683572}
 --- !u!95 &1460683571
 Animator:
   serializedVersion: 3
@@ -4760,9 +4761,9 @@ Animator:
   m_GameObject: {fileID: 1460683568}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
+  m_Controller: {fileID: 9100000, guid: dd716bb411c7f6745a4866f2257a660f, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 1
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -4778,12 +4779,12 @@ Animation:
   m_GameObject: {fileID: 1460683568}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: e9deee9f3165d64419224daa460ac832, type: 2}
+  m_Animation: {fileID: 7400000, guid: 20cec3f0688cccf4fbb3177266646d0b, type: 2}
   m_Animations: []
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_CullingType: 1
 --- !u!4 &1470515091 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4678776176899634, guid: 1c33964a412b8934e9fa1b662b54c78c,
