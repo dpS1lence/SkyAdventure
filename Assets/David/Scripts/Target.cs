@@ -11,7 +11,7 @@ public class Target : MonoBehaviour
         health -= amount;
         if (health <= 0f)
         {
-            Die();
+            Invoke("Die", (float)0.3);
         }
     }
 

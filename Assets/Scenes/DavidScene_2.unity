@@ -1098,19 +1098,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4579825387947210, guid: 988fc5747321c5e4d9f0acff90043f5f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.07111335
+      value: 0.081993856
       objectReference: {fileID: 0}
     - target: {fileID: 4579825387947210, guid: 988fc5747321c5e4d9f0acff90043f5f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.8261141
+      value: 0.8357644
       objectReference: {fileID: 0}
     - target: {fileID: 4579825387947210, guid: 988fc5747321c5e4d9f0acff90043f5f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.043336406
+      value: 0.01760044
       objectReference: {fileID: 0}
     - target: {fileID: 4579825387947210, guid: 988fc5747321c5e4d9f0acff90043f5f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5573153
+      value: 0.54264647
       objectReference: {fileID: 0}
     - target: {fileID: 4579825387947210, guid: 988fc5747321c5e4d9f0acff90043f5f, type: 3}
       propertyPath: m_RootOrder
@@ -1118,15 +1118,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4579825387947210, guid: 988fc5747321c5e4d9f0acff90043f5f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.439
+      value: 3.4150002
       objectReference: {fileID: 0}
     - target: {fileID: 4579825387947210, guid: 988fc5747321c5e4d9f0acff90043f5f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 112.02801
+      value: 114.27901
       objectReference: {fileID: 0}
     - target: {fileID: 4579825387947210, guid: 988fc5747321c5e4d9f0acff90043f5f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 9.544001
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 988fc5747321c5e4d9f0acff90043f5f, type: 3}
@@ -3694,13 +3694,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151944152}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74d35f6b2492f334a918db03ee28c1b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 100
-  range: 100
+  range: 2
   fpsCam: {fileID: 2069975406}
 --- !u!1001 &1167322935
 PrefabInstance:
@@ -4748,9 +4748,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 100
-  range: 100
+  range: 3.5
   fpsCam: {fileID: 2069975406}
   animationClip: {fileID: 1460683572}
+  animPickAxe: {fileID: 1460683571}
 --- !u!95 &1460683571
 Animator:
   serializedVersion: 3
@@ -5837,6 +5838,10 @@ PrefabInstance:
     - target: {fileID: 1427920461498372, guid: 1c33964a412b8934e9fa1b662b54c78c, type: 3}
       propertyPath: m_Name
       value: WoodBox_Large
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427920461498372, guid: 1c33964a412b8934e9fa1b662b54c78c, type: 3}
+      propertyPath: m_TagString
+      value: destroyer
       objectReference: {fileID: 0}
     - target: {fileID: 4678776176899634, guid: 1c33964a412b8934e9fa1b662b54c78c, type: 3}
       propertyPath: m_LocalPosition.x

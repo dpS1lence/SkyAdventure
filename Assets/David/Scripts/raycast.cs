@@ -9,22 +9,28 @@ public class raycast : MonoBehaviour
     public Camera fpsCam;
     private bool objectIsHitted = false;
     public Animation animationClip;
+    public Animator animPickAxe;
 
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
+            animPickAxe.SetBool("UsingPickAxe", true);
             //transform.Rotate(new Vector3(0f, 0f, 50f));
             //transform.Rotate(new Vector4(0f, 0f, -50f));
             Debug.Log("Shoot");
 
             Shoot();
         }
+        else
+        {
+            animPickAxe.SetBool("UsingPickAxe", false);
+        }
     }
 
     void OnMouseDown()
     {
-        animationClip.Play();
+        //animationClip.Play();
     }
 
     void Shoot()
