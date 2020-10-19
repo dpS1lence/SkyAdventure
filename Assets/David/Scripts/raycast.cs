@@ -8,15 +8,23 @@ public class raycast : MonoBehaviour
     public float range = 100f;
     public Camera fpsCam;
     private bool objectIsHitted = false;
+    public Animation animationClip;
 
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
+            //transform.Rotate(new Vector3(0f, 0f, 50f));
+            //transform.Rotate(new Vector4(0f, 0f, -50f));
             Debug.Log("Shoot");
 
             Shoot();
         }
+    }
+
+    void OnMouseDown()
+    {
+        animationClip.Play();
     }
 
     void Shoot()
