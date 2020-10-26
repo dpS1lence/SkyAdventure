@@ -8,6 +8,9 @@ public class UIwRaycast : MonoBehaviour
     public GameObject uiEl;
     public float range = 100f;
     public float show = 100f;
+    public FirstPersonAIO movement;
+    public GameObject objToTp;
+    public Transform tpLoc;
 
     RaycastHit hit;
 
@@ -17,18 +20,21 @@ public class UIwRaycast : MonoBehaviour
     }
     void Update()
     {
-        if (hit.collider.name == "other")
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            Debug.Log("hitted");
-            Shoot();
+            if (hit.collider.name == "other")
+            {
+                uiEl.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    objToTp.transform.position = tpLoc.transform.position;
+                }
+            }
+            else
+            {
+                uiEl.SetActive(false);
+            }
         }
     }
 
-    void Shoot()
-    {
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
-        {
-            uiEl.SetActive(true);
-        }
-    }
 }
