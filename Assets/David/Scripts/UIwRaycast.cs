@@ -11,12 +11,14 @@ public class UIwRaycast : MonoBehaviour
     public FirstPersonAIO movement;
     public GameObject objToTp;
     public Transform tpLoc;
+    public GameObject ui;
 
     RaycastHit hit;
 
     void Start()
     {
         uiEl.SetActive(false);
+        ui.SetActive(false);
     }
     void Update()
     {
@@ -24,10 +26,12 @@ public class UIwRaycast : MonoBehaviour
         {
             if (hit.collider.name == "other")
             {
+
                 uiEl.SetActive(true);
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    objToTp.transform.position = tpLoc.transform.position;
+                    uiEl.SetActive(false);
+                    StartCoroutine(WaitBeforeTp());
                 }
             }
             else
@@ -35,6 +39,16 @@ public class UIwRaycast : MonoBehaviour
                 uiEl.SetActive(false);
             }
         }
+    }
+
+    IEnumerator WaitBeforeTp()
+    {
+        ui.SetActive(true);
+
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(4);
+        objToTp.transform.position = tpLoc.transform.position;
+        ui.SetActive(false);
     }
 
 }
