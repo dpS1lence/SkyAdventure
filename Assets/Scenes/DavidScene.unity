@@ -20080,10 +20080,11 @@ MonoBehaviour:
   Player: {fileID: 435112947}
   FirstPersonCam: {fileID: 425952355}
   Camera2ndview: {fileID: 737844309}
-  HoverCarContr: {fileID: 1024985188}
   ObjectToTp: {fileID: 435112941}
   PlayerTransform2Obj: {fileID: 97894048}
   CutSceneCam: {fileID: 181521709}
+  GmOForState: {fileID: 1947247528}
+  range: 10
 --- !u!4 &437433116 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 443272, guid: 52c2612af80526741a33c2092448618c,
@@ -42200,12 +42201,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1024468735}
   m_Mesh: {fileID: 4300000, guid: 932518e1472904244afe21e844fd83ab, type: 3}
---- !u!1 &1024985188 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100218, guid: d3e0f70e52f114ea4bb323f87b1c8ec0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1911255101}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1024985189 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400218, guid: d3e0f70e52f114ea4bb323f87b1c8ec0,
@@ -80842,15 +80837,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400218, guid: d3e0f70e52f114ea4bb323f87b1c8ec0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1406.3433
+      value: 1716.9
       objectReference: {fileID: 0}
     - target: {fileID: 400218, guid: d3e0f70e52f114ea4bb323f87b1c8ec0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 113.64
+      value: 91.69
       objectReference: {fileID: 0}
     - target: {fileID: 400218, guid: d3e0f70e52f114ea4bb323f87b1c8ec0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 838.24786
+      value: 638.62
       objectReference: {fileID: 0}
     - target: {fileID: 400218, guid: d3e0f70e52f114ea4bb323f87b1c8ec0, type: 3}
       propertyPath: m_LocalRotation.x
@@ -82800,6 +82795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef5c898e8770f5541a07e9356a6d1fbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 0
 --- !u!4 &1947247530
 Transform:
   m_ObjectHideFlags: 0

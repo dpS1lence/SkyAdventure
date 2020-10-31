@@ -7,6 +7,7 @@ public class HoverCarControl : MonoBehaviour
   Rigidbody m_body;
   float m_deadZone = 0.1f;
 
+
   public float m_hoverForce = 9.0f;
 	//Force of hover
   public float m_StabilizedHoverHeight = 2.0f;
@@ -67,6 +68,7 @@ public class HoverCarControl : MonoBehaviour
 	
   void Update()
   {
+
 
     // Main Thrust
     m_currThrust = 0.0f;
