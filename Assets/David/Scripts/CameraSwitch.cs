@@ -10,7 +10,8 @@ public class CameraSwitch : MonoBehaviour
     public Camera FirstPersonCam;
     public Camera Camera2ndview;
     public GameObject HoverCarContr;
-
+    public GameObject ObjectToTp;
+    public Transform PlayerTransform2Obj;
     public Camera CutSceneCam;
     //public Animation animationAs;
 
@@ -44,9 +45,10 @@ public class CameraSwitch : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.P))
         {
-            FirstPersonCam.gameObject.SetActive(true);
             CutSceneCam.gameObject.SetActive(false);
             HoverCarContr.gameObject.SetActive(false);
+            ObjectToTp.transform.position = PlayerTransform2Obj.transform.position;
+            FirstPersonCam.gameObject.SetActive(true);
         }
 
     }
