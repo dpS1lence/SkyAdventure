@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerTp : MonoBehaviour
 {
-    /*public FirstPersonAIO movement;
     public GameObject ui;
     public GameObject objToTp;
     public Transform tpLoc;
@@ -28,5 +27,5 @@ public class PlayerTp : MonoBehaviour
     void OnCollisionExit()
     {
         ui.SetActive(false);
-    }*/
+    }
 }
