@@ -70152,7 +70152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1661973012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79986,14 +79986,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1887251050}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4abf06fe813b25140b6d239f1a0d66ba, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a0920eb3f4d721438947182794de1e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   walkingSpeed: 7.5
   runningSpeed: 11.5
   jumpSpeed: 8
-  gravity: 20
-  playerCamera: {fileID: 0}
+  gravity: 18
+  cam: {fileID: 1579214013}
   lookSpeed: 2
   lookXLimit: 45
   canMove: 1
