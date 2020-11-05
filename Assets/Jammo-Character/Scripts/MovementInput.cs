@@ -91,7 +91,6 @@ public class MovementInput : MonoBehaviour {
 
     public void RotateToCamera(Transform t)
     {
-
         var camera = Camera.main;
         var forward = cam.transform.forward;
         var right = cam.transform.right;
