@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UIwRaycast : MonoBehaviour
 {
-    public Camera fpsCam;
+    /*public Camera fpsCam;
     public GameObject uiEl;
     public float range = 100f;
     public float show = 100f;
@@ -49,6 +49,6 @@ public class UIwRaycast : MonoBehaviour
         yield return new WaitForSeconds(4);
         objToTp.transform.position = tpLoc.transform.position;
         ui.SetActive(false);
-    }
+    }*/
 
 }
