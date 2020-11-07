@@ -6,6 +6,7 @@ public class PlayerTp : MonoBehaviour
 {
     public GameObject ui;
     public GameObject objToTp;
+
     public Transform tpLoc;
 
     void Start()
@@ -15,17 +16,20 @@ public class PlayerTp : MonoBehaviour
 
     void OnCollisionEnter(Collision collisionInfo)
     {
+        Debug.Log("firstHit");
         if (collisionInfo.collider.name == "other")
         {
+            Debug.Log("secondHit");
             ui.SetActive(true);
-
             objToTp.transform.position = tpLoc.transform.position;
-
         }
     }
 
-    void OnCollisionExit()
+    void OnColisionExit()
     {
         ui.SetActive(false);
     }
+    
 }
+
+    
