@@ -6,23 +6,47 @@ public class PlayerTp : MonoBehaviour
 {
     public GameObject ui;
     public GameObject objToTp;
+    public Camera PCam;
+    public float range2 = 2.0f;
 
     public Transform tpLoc;
 
     void Start()
     {
         ui.SetActive(false);
+        
     }
 
-    void OnCollisionEnter(Collision collisionInfo)
+    void Update(){
+        VRay();
+    }
+
+
+    void VRay()
     {
-        Debug.Log("firstHit");
-        if (collisionInfo.collider.name == "other")
+        RaycastHit hit;
+
+        Physics.Raycast(PCam.transform.position, PCam.transform.forward, out hit, range2);
+
+        if (hit.collider != null)
         {
-            Debug.Log("secondHit");
-            ui.SetActive(true);
-            objToTp.transform.position = tpLoc.transform.position;
+            if (hit.collider.name == "other")
+            {
+                Debug.Log("secondHit");
+                ui.SetActive(true);
+                if(Input.GetKeyDown(KeyCode.B))
+                {
+                    objToTp.transform.position = tpLoc.transform.position;
+                    ui.SetActive(false);
+                }
+            }
+            
         }
+        else 
+        {
+            ui.SetActive(false);
+        }
+
     }
 
     void OnColisionExit()

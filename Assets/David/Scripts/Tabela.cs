@@ -27,26 +27,20 @@ public class Tabela : MonoBehaviour
             {
                 ui.SetActive(true);
             }
-            else
-            {
-                ui.SetActive(false);
-            }
-            if (hit.collider.name == "Tabela_2")
+            else if (hit.collider.name == "Tabela_2")
             {
                 ui2.SetActive(true);
             }
-            else
-            {
-                ui2.SetActive(false);
-            }
-            if (hit.collider.name == "Tabela_3")
+            else if (hit.collider.name == "Tabela_3")
             {
                 ui3.SetActive(true);
             }
-            else
-            {
-                ui3.SetActive(false);
-            }
+        }
+        else
+        {
+            ui.SetActive(false);
+            ui2.SetActive(false);
+            ui3.SetActive(false);
         }
     }
 }
