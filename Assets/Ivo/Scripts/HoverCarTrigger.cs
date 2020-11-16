@@ -8,7 +8,7 @@ public class HoverCarTrigger : MonoBehaviour
     public GameObject player;
     public GameObject hoverCar;
     public GameObject hoverCarCamera;
-    public GameObject shibanColiderr;
+    //public GameObject shibanColiderr;
 
     public float range = 2;
 
@@ -53,7 +53,7 @@ public class HoverCarTrigger : MonoBehaviour
         {
             if (hit.collider.tag == "hoverCar")
             {
-                shibanColiderr.SetActive(true);
+                //shibanColiderr.SetActive(true);
                 hoverCar.GetComponent<HoverCarControl>().enabled = true;
                 hoverCarCamera.SetActive(true);
                 player.SetActive(false);
@@ -70,7 +70,7 @@ public class HoverCarTrigger : MonoBehaviour
 
         player.transform.position = spawnPosition;
         
-        shibanColiderr.SetActive(false);
+        //shibanColiderr.SetActive(false);ssss
         player.SetActive(true);
         hoverCarCamera.SetActive(false);
         hoverCar.GetComponent<HoverCarControl>().enabled = false;
