@@ -8,7 +8,7 @@ public class HoverCarTrigger : MonoBehaviour
     public GameObject player;
     public GameObject hoverCar;
     public GameObject hoverCarCamera;
-    //public GameObject shibanColiderr;
+    public GameObject shibanColiderr;
 
     public float range = 2;
 
@@ -23,6 +23,7 @@ public class HoverCarTrigger : MonoBehaviour
     {
         hoverCarCamera.SetActive(false);
         hoverCar.GetComponent<HoverCarControl>().enabled = false;
+        shibanColiderr.SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,6 +42,10 @@ public class HoverCarTrigger : MonoBehaviour
 
             inCar = !inCar;
         }
+        else
+        {
+            //shibanColiderr.SetActive(false);
+        }
     }
 
     public void InstateRaycast()
@@ -53,6 +58,7 @@ public class HoverCarTrigger : MonoBehaviour
         {
             if (hit.collider.tag == "hoverCar")
             {
+                shibanColiderr.SetActive(true);
                 //shibanColiderr.SetActive(true);
                 hoverCar.GetComponent<HoverCarControl>().enabled = true;
                 hoverCarCamera.SetActive(true);
@@ -60,6 +66,10 @@ public class HoverCarTrigger : MonoBehaviour
                 hoverCar.SetActive(true);
             }
 
+        }
+        else
+        {
+            shibanColiderr.SetActive(false);
         }
 
     }
@@ -70,7 +80,7 @@ public class HoverCarTrigger : MonoBehaviour
 
         player.transform.position = spawnPosition;
         
-        //shibanColiderr.SetActive(false);ssss
+        shibanColiderr.SetActive(false);
         player.SetActive(true);
         hoverCarCamera.SetActive(false);
         hoverCar.GetComponent<HoverCarControl>().enabled = false;

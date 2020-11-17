@@ -37,6 +37,7 @@ public class HoverCarControl : MonoBehaviour
 
     m_layerMask = 1 << LayerMask.NameToLayer("Characters");
     m_layerMask = ~m_layerMask;
+
   }
 
   void OnDrawGizmos()
