@@ -31,9 +31,9 @@ public class ReactorFix : MonoBehaviour
 
         if (hit.collider != null)
         {
-            elementUi.SetActive(true);
             if (hit.collider.tag == "reactor")
             {
+                elementUi.SetActive(true);
                 if(Input.GetKeyDown(KeyCode.Alpha1))
                 {
                     Debug.Log("1");
