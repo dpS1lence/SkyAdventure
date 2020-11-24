@@ -8,7 +8,6 @@ public class HoverCarTrigger : MonoBehaviour
     public GameObject player;
     public GameObject hoverCar;
     public GameObject hoverCarCamera;
-    public GameObject shibanColiderr;
 
     public float range = 2;
 
@@ -23,7 +22,6 @@ public class HoverCarTrigger : MonoBehaviour
     {
         hoverCarCamera.SetActive(false);
         hoverCar.GetComponent<HoverCarControl>().enabled = false;
-        shibanColiderr.SetActive(false);
     }
 
     // Update is called once per frame
@@ -31,7 +29,7 @@ public class HoverCarTrigger : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (inCar == false)
+            if (inCar == true)
             {
                 InstateRaycast();
             }
@@ -39,12 +37,6 @@ public class HoverCarTrigger : MonoBehaviour
             {
                 LeaveCar();
             }
-
-            inCar = !inCar;
-        }
-        else
-        {
-            //shibanColiderr.SetActive(false);
         }
     }
 
@@ -58,18 +50,12 @@ public class HoverCarTrigger : MonoBehaviour
         {
             if (hit.collider.tag == "hoverCar")
             {
-                shibanColiderr.SetActive(true);
-                //shibanColiderr.SetActive(true);
                 hoverCar.GetComponent<HoverCarControl>().enabled = true;
                 hoverCarCamera.SetActive(true);
                 player.SetActive(false);
                 hoverCar.SetActive(true);
             }
 
-        }
-        else
-        {
-            shibanColiderr.SetActive(false);
         }
 
     }
@@ -79,8 +65,8 @@ public class HoverCarTrigger : MonoBehaviour
         Vector3 spawnPosition = new Vector3(hoverCar.transform.position.x + spawnOffsetX, hoverCar.transform.position.y + spawnOffsetY, hoverCar.transform.position.z + spawnOffsetZ);
 
         player.transform.position = spawnPosition;
-        
-        shibanColiderr.SetActive(false);
+
+
         player.SetActive(true);
         hoverCarCamera.SetActive(false);
         hoverCar.GetComponent<HoverCarControl>().enabled = false;
