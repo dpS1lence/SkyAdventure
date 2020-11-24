@@ -31,10 +31,12 @@ public class HoverCarTrigger : MonoBehaviour
         {
             if (inCar == true)
             {
+                inCar = false;
                 InstateRaycast();
             }
             else
             {
+                inCar = true;
                 LeaveCar();
             }
         }
