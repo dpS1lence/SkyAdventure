@@ -23,7 +23,7 @@ public class Respawn_Key : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.R))
+        if(Input.GetKeyDown(KeyCode.M))
         {
             Respawn();
         }

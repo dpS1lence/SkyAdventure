@@ -15,14 +15,7 @@ namespace Sabresaurus.SabreCSG
 		static void CreateNewCSGObject()
 		{
 			// Create objects to hold the CSG Model and Work Brush (with associated scripts attached)
-			GameObject rootGameObject = new GameObject("CSGModel", typeof(CSGModel));
 			
-			Undo.RegisterCreatedObjectUndo (rootGameObject, "Create New CSG Model");
-			
-			// Set the user's selection to the new CSG Model, so that they can start working with it
-			Selection.activeGameObject = rootGameObject;
-
-			CurrentSettings.CurrentMode = MainMode.Resize;
 
 			// The automatic lightmapping conflicts when dealing with small brush counts, so default to user baking
 			// The user can change this back to Auto if they want, but generally that'll only be an issue when they've
@@ -30,20 +23,10 @@ namespace Sabresaurus.SabreCSG
 			Lightmapping.giWorkflowMode = Lightmapping.GIWorkflowMode.OnDemand;
 		}
 		
-		[MenuItem("Edit/Rebuild CSG " + KeyMappings.Rebuild, false, 100)]
 		static void Rebuild()
 		{
-			CSGModel[] csgModels = FindObjectsOfType<CSGModel>();
 
 			// Build the first csg model that is currently being edited
-			for (int i = 0; i < csgModels.Length; i++) 
-			{
-				if(csgModels[i].EditMode)
-				{
-					csgModels[i].Build(false, false);
-					break;
-				}
-			}
 		}
 
 //		[MenuItem("SabreCSG/About")]
@@ -74,18 +57,6 @@ namespace Sabresaurus.SabreCSG
 			for (int i = 0; i < 4; i++) 
 			{
 				SceneView sceneView = ((SceneView)SceneView.sceneViews[i]);
-				if(EditorHelper.GetSceneViewCamera(sceneView) == EditorHelper.SceneViewCamera.Other)
-				{
-					sceneView.orthographic = false;
-					sceneView.sceneLighting = true;
-				}
-				else
-				{
-					sceneView.orthographic = true;
-					sceneView.sceneLighting = false;
-					SceneView.SceneViewState state = GetSceneViewState(sceneView);
-					state.SetAllEnabled(false);
-				}
 			}
 			SceneView.RepaintAll();
 		}

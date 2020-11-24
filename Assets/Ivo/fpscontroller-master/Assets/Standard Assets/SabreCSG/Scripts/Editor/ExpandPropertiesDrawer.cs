@@ -4,7 +4,6 @@ using UnityEditor;
 
 namespace Sabresaurus.SabreCSG
 {
-	[CustomPropertyDrawer (typeof(ExpandPropertiesAttribute))]
 	class ExpandPropertiesDrawer : PropertyDrawer 
 	{
 		const int PADDING = 2;

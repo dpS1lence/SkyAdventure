@@ -5,12 +5,10 @@ using System.Collections.Generic;
 
 namespace Sabresaurus.SabreCSG
 {
-	[CustomEditor(typeof(KeyMappings))]
 	public class KeyMappingsInspector : Editor
 	{
 		public override void OnInspectorGUI()
 		{
-			GUILayout.Label("SabreCSG Key Mappings", SabreGUILayout.GetTitleStyle());
 
 			EditorGUILayout.BeginHorizontal();
 			GUILayout.Label("Uses Unity shortcut format");

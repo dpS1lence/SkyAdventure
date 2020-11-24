@@ -161,7 +161,7 @@ public class FpsController : MonoBehaviour
         _transform.rotation *= Quaternion.Euler(Input.GetAxis("Mouse X") * Sensitivity * dt * Vector3.up);
         
         // Reset player -- makes testing much easier
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.M))
         {
             Gravity.Set(Vector3.down);
             _transform.position = new Vector3(1260.5F, 84.1F, 1836.4F);
