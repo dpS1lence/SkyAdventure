@@ -9,8 +9,6 @@ public class Enemy : MonoBehaviour
 
     public Transform player;
 
-    public float foundPlayer = 1;
-
 
     // Update is called once per frame
     void Update()
