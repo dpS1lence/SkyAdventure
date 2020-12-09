@@ -16,10 +16,11 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         GetComponent<NavMeshAgent>().destination = player.transform.position;
+    }
 
-        /*if (transform.position.x < foundPlayer || transform.position.z < foundPlayer)
-        {
+    private void OnCollisionEnter(Collision collision)
+    {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }*/
+      
     }
 }
