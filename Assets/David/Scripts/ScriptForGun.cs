@@ -7,14 +7,20 @@ public class ScriptForGun : MonoBehaviour
     public GameObject cameraff;
     public float range3 = 2.0f;
     public GameObject enemy;
+    public float damage = 35.0f;
 
     void Start()
     {
+
     }
 
     void Update()
     {
-        Shoot();
+        if(Input.GetButtonDown("Fire1"))
+        {
+            Debug.Log("Update");
+            Shoot();
+        }
     }
 
 
@@ -26,12 +32,12 @@ public class ScriptForGun : MonoBehaviour
 
         if (hit.collider != null)
         {
+            Debug.Log("hitColider");
             if (hit.collider.name == "ColiderChest")
             {
-                if(Input.GetButtonDown("Fire1"))
-                {
-                    Destroy(enemy);
-                }
+                Debug.Log("hitChest");
+                Target target = hit.transform.GetComponent<Target>();
+                target.TakeDamage(damage);
             }
         }
     }

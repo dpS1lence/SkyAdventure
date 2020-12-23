@@ -13,6 +13,7 @@ public class ammo : MonoBehaviour
     public GameObject immageAmmo6;
     public GameObject particleGunRay;
     public GameObject particleGunRay2;
+    public GunShoot gunShoot;
 
     int ammoCheck = 0;
 
