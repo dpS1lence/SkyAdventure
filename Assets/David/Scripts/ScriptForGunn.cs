@@ -2,17 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScriptForGun : MonoBehaviour
+public class ScriptForGunn : MonoBehaviour
 {
-    public GameObject cameraff;
+public GameObject cameraff;
     public float range3 = 2.0f;
     public GameObject enemy;
     public float damage = 35.0f;
-
-    void Start()
-    {
-
-    }
 
     void Update()
     {
