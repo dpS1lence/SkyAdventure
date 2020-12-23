@@ -36,7 +36,7 @@ public class ScriptForGun : MonoBehaviour
             if (hit.collider.name == "ColiderChest")
             {
                 Debug.Log("hitChest");
-                Target target = hit.transform.GetComponent<Target>();
+                enemyCs target = hit.transform.GetComponent<enemyCs>();
                 target.TakeDamage(damage);
             }
         }

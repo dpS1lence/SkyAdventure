@@ -6,6 +6,7 @@ public class enemyCs : MonoBehaviour
 {
 
     public float health = 50f;
+    public GameObject goblin;
 
     public void TakeDamage (float amount)
     {
@@ -21,6 +22,6 @@ public class enemyCs : MonoBehaviour
     void Die()
     {
         Debug.Log("Die");
-        Destroy(gameObject);
+        Destroy(goblin);
     }
 }
