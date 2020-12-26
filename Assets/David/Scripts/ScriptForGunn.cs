@@ -8,6 +8,7 @@ public GameObject cameraff;
     public float range3 = 2.0f;
     public GameObject enemy;
     public float damage = 35.0f;
+    public float head = 120.0f;
 
     void Update()
     {
@@ -33,6 +34,11 @@ public GameObject cameraff;
                 Debug.Log("hitChest");
                 enemyCs target = hit.transform.GetComponent<enemyCs>();
                 target.TakeDamage(damage);
+            }
+            else if(hit.collider.name == "ColiderHead")
+            {
+                enemyCs target = hit.transform.GetComponent<enemyCs>();
+                target.TakeDamage(head);
             }
         }
     }
