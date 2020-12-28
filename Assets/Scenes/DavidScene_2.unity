@@ -5732,6 +5732,12 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!95 &185532106 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 517935322570870952, guid: ccfff45745712754ab303fc93174e5e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 6222434025617392980}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &188659423 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4453788348126682, guid: 274eda99c510a1f44a1db8802f60a5bb,
@@ -6183,19 +6189,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6222434025617392980}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &272154133
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!4 &272154132 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6222434025882139462, guid: ccfff45745712754ab303fc93174e5e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 6222434025617392980}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272154129}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.126831, y: 0.42404175, z: 0.8927002}
-  m_Center: {x: 0.053649902, y: 1.352066, z: 0.41485596}
 --- !u!1 &283665250
 GameObject:
   m_ObjectHideFlags: 0
@@ -53333,6 +53332,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75fa8bf3a73ee6b4da0c7a2c6d3db6a1, type: 3}
+--- !u!1 &682209494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 682209495}
+  m_Layer: 0
+  m_Name: Arms
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &682209495
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682209494}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.289, z: -0.077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 272154132}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &686633719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72824,6 +72853,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2688008342120613086, guid: 13dc8e5aacd824747bf14a1bedfb0454,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2688624972451950252, guid: 13dc8e5aacd824747bf14a1bedfb0454,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2691746547714095168, guid: 13dc8e5aacd824747bf14a1bedfb0454,
         type: 3}
@@ -120743,6 +120782,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 517935322570870952, guid: ccfff45745712754ab303fc93174e5e5,
+        type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'Hips'\n\tTransform 'Spine1'\n\tTransform
+        'LeftHandMiddle2'\n\tTransform 'Neck'\n\tTransform 'LeftHandThumb1'\n\tTransform
+        'LeftHandRing2'\n\tTransform 'RightHandMiddle1'\n\tTransform 'LeftUpLeg'\n\tTransform
+        'LeftHandIndex2'\n\tTransform 'RightHandThumb2'\n\tand more ...\n\tFrom animation
+        clip 'Idle'"
+      objectReference: {fileID: 0}
     - target: {fileID: 6222434025281374334, guid: ccfff45745712754ab303fc93174e5e5,
         type: 3}
       propertyPath: m_Size.z
@@ -120758,6 +120808,26 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 668480168}
+    - target: {fileID: 6222434025559130301, guid: ccfff45745712754ab303fc93174e5e5,
+        type: 3}
+      propertyPath: range
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222434025559130301, guid: ccfff45745712754ab303fc93174e5e5,
+        type: 3}
+      propertyPath: arms
+      value: 
+      objectReference: {fileID: 682209495}
+    - target: {fileID: 6222434025559130301, guid: ccfff45745712754ab303fc93174e5e5,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 185532106}
+    - target: {fileID: 6222434025559130301, guid: ccfff45745712754ab303fc93174e5e5,
+        type: 3}
+      propertyPath: eyeSight
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6222434025559130302, guid: ccfff45745712754ab303fc93174e5e5,
         type: 3}
       propertyPath: m_StoppingDistance
