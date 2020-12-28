@@ -5,15 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoaderSpaceShip : MonoBehaviour
 {
-    public string previousScene;
-
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("em_niceff");
-        if (collision.collider.tag == "console")
+        if(collision.collider.name == "colider")
         {
             Debug.Log("em_nice");
-            SceneManager.LoadScene("DavidScene");
+            SceneManager.LoadScene("Mineshaft");
         }
 
     }
