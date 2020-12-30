@@ -9,16 +9,30 @@ public class Enemy : MonoBehaviour
 
     public Transform player;
 
+    public double range;
+
 
     // Update is called once per frame
     void Update()
     {
-        GetComponent<NavMeshAgent>().destination = player.transform.position;
+
+        if (Vector3.Distance(gameObject.transform.position, player.position) < range)
+        {
+            //close to player
+            GetComponent<NavMeshAgent>().destination = player.transform.position;
+
+        }
+        else
+        {
+            //staying on place
+            GetComponent<NavMeshAgent>().destination = gameObject.transform.position;
+        }
     }
 
+
+    //caught player
     private void OnCollisionEnter(Collision collision)
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-      
     }
 }
