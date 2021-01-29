@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
-    public float damage = 20;
+    /*public float damage = 20;
     public float range = 100;
     public float fireRate = 10;
     public float fireTime = 0.2F;
@@ -110,5 +110,5 @@ public class Gun : MonoBehaviour
         canShoot = true;
         currentAmmo = maxAmmo;
         anim.SetBool("reloading", false);
-    }
+    }*/
 }

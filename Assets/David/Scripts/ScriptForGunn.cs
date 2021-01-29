@@ -35,9 +35,10 @@ public GameObject cameraff;
                 enemyCs target = hit.transform.GetComponent<enemyCs>();
                 target.TakeDamage(damage);
             }
-            else if(hit.collider.name == "ColiderHead")
+            if(hit.collider.name == "ColiderHead")
             {
                 enemyCs target = hit.transform.GetComponent<enemyCs>();
+                Debug.Log(hit.collider.name);
                 target.TakeDamage(head);
             }
         }

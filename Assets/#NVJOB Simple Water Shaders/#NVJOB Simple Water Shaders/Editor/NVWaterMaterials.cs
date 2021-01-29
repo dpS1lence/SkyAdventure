@@ -442,7 +442,6 @@ internal class NVWaterMaterials : MaterialEditor
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-[CustomEditor(typeof(SimpleWaterShaders))]
 [CanEditMultipleObjects]
 
 public class SimpleWaterShaderEditor : Editor
