@@ -8,17 +8,19 @@ public class Throw : MonoBehaviour
 
     public float thrust = 1.0f;
 
-    public Rigidbody rb;
+    public Transform cam;
 
-    public Transform camera;
-
-    void Start()
-    {
-        rb = objectToThrow.GetComponent<Rigidbody>();
-    }
+    GameObject clone;
 
     void FixedUpdate()
     {
-        rb.AddForce(camera.forward * thrust);
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            clone = Instantiate(objectToThrow, cam.position, cam.rotation);
+
+            clone.transform.position = cam.position;
+
+            clone.GetComponent<Rigidbody>().AddForce(cam.forward * thrust);
+        }
     }
 }
