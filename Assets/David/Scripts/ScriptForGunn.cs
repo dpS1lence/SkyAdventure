@@ -9,12 +9,14 @@ public GameObject cameraff;
     public GameObject enemy;
     public float damage = 35.0f;
     public float head = 120.0f;
+    public Animation baseballBat;
 
     void Update()
     {
         if(Input.GetButtonDown("Fire1"))
         {
             Debug.Log("Update");
+            baseballBat.Play();
             Shoot();
         }
     }
@@ -43,4 +45,5 @@ public GameObject cameraff;
             }
         }
     }
+
 }

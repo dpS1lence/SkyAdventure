@@ -13,16 +13,4 @@ public class WaterCollision : MonoBehaviour
         uiElementWater.SetActive(false);
     }
     
-    void OnTriggerEnter(Collision collisionInfo)
-    {
-        if (collisionInfo.collider.tag == "water")
-        {
-            uiElementWater.SetActive(true);
-        }
-    }
-
-    void OnTriggerExit()
-    {
-        uiElementWater.SetActive(false);
-    }
 }

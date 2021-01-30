@@ -7,6 +7,7 @@ public class enemyCs : MonoBehaviour
 
     public float health = 50f;
     public GameObject goblin;
+    public Animator goblinAnim;
 
     public void TakeDamage (float amount)
     {
@@ -15,13 +16,15 @@ public class enemyCs : MonoBehaviour
         if(health <= 0f)
         {
             Debug.Log("health");
-            Die();
+            Stun();
         }
     }
-
-    void Die()
+    
+    public void Stun()
     {
-        Debug.Log("Die");
-        Destroy(goblin);
+        GetComponent<Enemy>().enabled = false;
+        goblinAnim.gameObject.GetComponent<Animator>().enabled = false;
+
     }
+
 }

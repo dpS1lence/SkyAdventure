@@ -5,14 +5,14 @@ using UnityEngine;
 public class ammo : MonoBehaviour
 {
 
-    public GameObject immageAmmo1;
+    /*public GameObject immageAmmo1;
     public GameObject immageAmmo2;
     public GameObject immageAmmo3;
     public GameObject immageAmmo4;
     public GameObject immageAmmo5;
     public GameObject immageAmmo6;
-    public GameObject particleGunRay;
-    public GameObject particleGunRay2;
+    //public GameObject particleGunRay;
+    //public GameObject particleGunRay2;
 
     int ammoCheck = 0;
 
@@ -26,8 +26,8 @@ public class ammo : MonoBehaviour
         immageAmmo4.SetActive(true);
         immageAmmo5.SetActive(true);
         immageAmmo6.SetActive(true);
-        particleGunRay.SetActive(true);
-        particleGunRay2.SetActive(true);
+        //particleGunRay.SetActive(true);
+        //particleGunRay2.SetActive(true);
     }
 
     // Update is called once per frame
@@ -68,8 +68,8 @@ public class ammo : MonoBehaviour
         if (ammoCheck == 6)
         {
             immageAmmo6.SetActive(false);
-            particleGunRay.SetActive(false);
-            particleGunRay2.SetActive(false);
+            //particleGunRay.SetActive(false);
+            //particleGunRay2.SetActive(false);
         }
 
         if(Input.GetKeyDown(KeyCode.Y))
@@ -81,9 +81,9 @@ public class ammo : MonoBehaviour
             immageAmmo4.SetActive(true);
             immageAmmo5.SetActive(true);
             immageAmmo6.SetActive(true);
-            particleGunRay.SetActive(true);
-            particleGunRay2.SetActive(true);
+            //particleGunRay.SetActive(true);
+            //particleGunRay2.SetActive(true);
         }
-    }
+    }*/
 
 }
