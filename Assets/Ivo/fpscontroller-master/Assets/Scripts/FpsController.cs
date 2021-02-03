@@ -162,7 +162,7 @@ public class FpsController : MonoBehaviour
         
         // Reset player -- makes testing much easier
 
-        _hook.Draw();
+       // _hook.Draw();
 
         // MOVEMENT
         var wishDir = _camTransform.TransformDirectionHorizontal(_moveInput); // We want to go in this direction
