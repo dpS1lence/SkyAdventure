@@ -6,14 +6,11 @@ public class GettingItem : MonoBehaviour
 {
     public Camera cam;
     public GameObject player;
-    public GameObject UI;
 
     public Animator anim;
     public float animationLenght = 1f;
 
     public GameObject cutsceneCam;
-
-    public GameObject text;
 
     bool hasItem = false;
     bool canOpen = false;
@@ -41,7 +38,6 @@ public class GettingItem : MonoBehaviour
 
                 Debug.Log("Item");
 
-                UI.SetActive(false);
                 cutsceneCam.SetActive(true);
                 player.GetComponent<FpsController>().enabled = false;
                 anim.SetBool("open", true);
@@ -50,9 +46,6 @@ public class GettingItem : MonoBehaviour
             }
             else if (hit.collider.name == "key")
             {
-                text.SetActive(true);
-                Destroy(text, 1.3f);
-
                 Destroy(hit.collider.gameObject);
                 canOpen = true;
             }
@@ -72,6 +65,5 @@ public class GettingItem : MonoBehaviour
 
         player.GetComponent<FpsController>().enabled = true;
         cutsceneCam.SetActive(false);
-        UI.SetActive(true);
     }
 }
