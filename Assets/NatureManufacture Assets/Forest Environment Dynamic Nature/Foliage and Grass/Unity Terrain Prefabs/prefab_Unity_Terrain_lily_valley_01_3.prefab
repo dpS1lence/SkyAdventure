@@ -9,14 +9,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8132993626496273747}
-  - component: {fileID: 5880227971814100501}
-  - component: {fileID: 5795402995696714691}
+  - component: {fileID: 6884001428540081394}
+  - component: {fileID: 613191011940011112}
   m_Layer: 0
   m_Name: prefab_Unity_Terrain_lily_valley_01_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &8132993626496273747
 Transform:
@@ -32,15 +32,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5880227971814100501
+--- !u!33 &6884001428540081394
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8132993626496307571}
-  m_Mesh: {fileID: 4300004, guid: ac4f86e31a9defb448c897d8dd18c792, type: 3}
---- !u!23 &5795402995696714691
+  m_Mesh: {fileID: 4300006, guid: ac4f86e31a9defb448c897d8dd18c792, type: 3}
+--- !u!23 &613191011940011112
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,7 +66,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
+  m_ReceiveGI: 2
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

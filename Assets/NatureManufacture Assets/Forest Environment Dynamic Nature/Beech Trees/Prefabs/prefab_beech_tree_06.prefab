@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 80
+  m_StaticEditorFlags: 81
   m_IsActive: 1
 --- !u!4 &6426938288889461293
 Transform:
@@ -39,7 +39,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402231074841112697}
-  m_Mesh: {fileID: 4300000, guid: 39ebd93c30fe6654aa90b9708eccc251, type: 2}
+  m_Mesh: {fileID: -8966223225212248468, guid: 764eea74b24d6ad44ba2a0607480b983, type: 3}
 --- !u!23 &3656357261575558042
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54,6 +54,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -95,7 +96,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 80
+  m_StaticEditorFlags: 81
   m_IsActive: 1
 --- !u!4 &6409057458661898612
 Transform:
@@ -118,7 +119,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2783166917596898679}
-  m_Mesh: {fileID: 4300000, guid: 18dba595c29e7694bb92f8914fde691d, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 523bdf9eb373ecf479fca25aff26f755, type: 2}
 --- !u!23 &6243954337748365146
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -133,6 +134,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -173,7 +175,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 80
+  m_StaticEditorFlags: 81
   m_IsActive: 1
 --- !u!4 &6308037252056613722
 Transform:
@@ -196,7 +198,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3165581000933246620}
-  m_Mesh: {fileID: 4300000, guid: a50b8a3ca0f4aed4486ad4d21704b761, type: 2}
+  m_Mesh: {fileID: -757557247466214455, guid: 764eea74b24d6ad44ba2a0607480b983, type: 3}
 --- !u!23 &4348421166397924619
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -211,6 +213,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -252,7 +255,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 80
+  m_StaticEditorFlags: 81
   m_IsActive: 1
 --- !u!4 &4170073895821691101
 Transform:
@@ -275,7 +278,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8367630982504019013}
-  m_Mesh: {fileID: 4300000, guid: c3b572a1e80de6546b79ea29617ffb84, type: 2}
+  m_Mesh: {fileID: 189752996649040186, guid: 764eea74b24d6ad44ba2a0607480b983, type: 3}
 --- !u!23 &7966449104201464641
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -290,6 +293,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -364,7 +368,7 @@ LODGroup:
   m_AnimateCrossFading: 1
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 2
+  - screenRelativeHeight: 2.1
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 3656357261575558042}
@@ -372,7 +376,7 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 4348421166397924619}
-  - screenRelativeHeight: 0.36593664
+  - screenRelativeHeight: 0.31422138
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 7966449104201464641}

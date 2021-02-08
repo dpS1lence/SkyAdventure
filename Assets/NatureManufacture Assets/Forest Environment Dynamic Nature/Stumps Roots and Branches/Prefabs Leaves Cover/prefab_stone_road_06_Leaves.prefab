@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_StaticEditorFlags: 17
   m_IsActive: 1
 --- !u!4 &8860462229607374409
 Transform:
@@ -39,7 +39,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559034789371816479}
-  m_Mesh: {fileID: 4300000, guid: 14aa717ed5a519349b99fab6321c4b80, type: 3}
+  m_Mesh: {fileID: 3178546586585427850, guid: 14aa717ed5a519349b99fab6321c4b80, type: 3}
 --- !u!23 &4986537281151659922
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54,6 +54,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -65,6 +66,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 2
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -94,7 +96,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_StaticEditorFlags: 17
   m_IsActive: 1
 --- !u!4 &975926935056387619
 Transform:
@@ -117,7 +119,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4345074390291415653}
-  m_Mesh: {fileID: 4300002, guid: 14aa717ed5a519349b99fab6321c4b80, type: 3}
+  m_Mesh: {fileID: 3417009336382546924, guid: 14aa717ed5a519349b99fab6321c4b80, type: 3}
 --- !u!23 &1678225422389463976
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -132,6 +134,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -143,6 +146,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 2
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -168,7 +172,7 @@ MeshCollider:
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 14aa717ed5a519349b99fab6321c4b80, type: 3}
+  m_Mesh: {fileID: 3178546586585427850, guid: 14aa717ed5a519349b99fab6321c4b80, type: 3}
 --- !u!1 &6982743853160910242
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +224,7 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 1678225422389463976}
-  - screenRelativeHeight: 0.05210019
+  - screenRelativeHeight: 0.08317162
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 4986537281151659922}

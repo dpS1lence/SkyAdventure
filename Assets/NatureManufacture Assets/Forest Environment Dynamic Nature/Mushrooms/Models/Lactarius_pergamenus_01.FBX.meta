@@ -1,21 +1,59 @@
 fileFormatVersion: 2
 guid: e84935f3563939443bb080a7b5719b3a
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Lactarius_pergamenus_01_LOD0
-    100004: Lactarius_pergamenus_01_LOD1
-    400000: //RootNode
-    400002: Lactarius_pergamenus_01_LOD0
-    400004: Lactarius_pergamenus_01_LOD1
-    2300000: Lactarius_pergamenus_01_LOD0
-    2300002: Lactarius_pergamenus_01_LOD1
-    3300000: Lactarius_pergamenus_01_LOD0
-    3300002: Lactarius_pergamenus_01_LOD1
-    4300000: Lactarius_pergamenus_01_LOD1
-    4300002: Lactarius_pergamenus_01_LOD0
-    20500000: //RootNode
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Lactarius_pergamenus_01_LOD0
+  - first:
+      1: 100004
+    second: Lactarius_pergamenus_01_LOD1
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Lactarius_pergamenus_01_LOD0
+  - first:
+      4: 400004
+    second: Lactarius_pergamenus_01_LOD1
+  - first:
+      21: 2100000
+    second: M_forest_mushrooms_01
+  - first:
+      23: 2300000
+    second: //RootNode
+  - first:
+      23: 2300002
+    second: Lactarius_pergamenus_01_LOD0
+  - first:
+      23: 2300004
+    second: Lactarius_pergamenus_01_LOD1
+  - first:
+      33: 3300000
+    second: //RootNode
+  - first:
+      33: 3300002
+    second: Lactarius_pergamenus_01_LOD0
+  - first:
+      33: 3300004
+    second: Lactarius_pergamenus_01_LOD1
+  - first:
+      43: 4300000
+    second: Lactarius_pergamenus_01
+  - first:
+      43: 4300002
+    second: Lactarius_pergamenus_01_LOD1
+  - first:
+      43: 4300004
+    second: Lactarius_pergamenus_01_LOD0
+  - first:
+      205: 20500000
+    second: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -65,18 +103,19 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -85,10 +124,11 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -98,6 +138,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

@@ -1,21 +1,332 @@
 fileFormatVersion: 2
 guid: 48db8f629b5b62046938deb87352149c
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Forest_black_cherry_03_LOD0
-    100004: Forest_black_cherry_03_LOD1
-    400000: //RootNode
-    400002: Forest_black_cherry_03_LOD0
-    400004: Forest_black_cherry_03_LOD1
-    2300000: Forest_black_cherry_03_LOD0
-    2300002: Forest_black_cherry_03_LOD1
-    3300000: Forest_black_cherry_03_LOD0
-    3300002: Forest_black_cherry_03_LOD1
-    4300000: Forest_black_cherry_03_LOD1
-    4300002: Forest_black_cherry_03_LOD0
-    20500000: //RootNode
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: ATree3D_Oak_210
+  - first:
+      1: 100004
+    second: ATree3D_Oak_212
+  - first:
+      1: 100006
+    second: ATree3D_Oak_213
+  - first:
+      1: 100008
+    second: ATree3D_Oak_214
+  - first:
+      1: 100010
+    second: ATree3D_Oak_215
+  - first:
+      1: 100012
+    second: ATree3D_Oak_216
+  - first:
+      1: 100014
+    second: ATree3D_Oak_218
+  - first:
+      1: 100016
+    second: ATree3D_Oak_219
+  - first:
+      1: 100018
+    second: ATree3D_Oak_220
+  - first:
+      1: 100020
+    second: ATree3D_Oak_221
+  - first:
+      1: 100022
+    second: ATree3D_Oak_222
+  - first:
+      1: 100024
+    second: ATree3D_Oak_223
+  - first:
+      1: 100026
+    second: ATree3D_Oak_224
+  - first:
+      1: 100028
+    second: ATree3D_Oak_232
+  - first:
+      1: 100030
+    second: ATree3D_Oak_234
+  - first:
+      1: 100032
+    second: ATree3D_Oak_235
+  - first:
+      1: 100034
+    second: ATree3D_Oak_236
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: ATree3D_Oak_210
+  - first:
+      4: 400004
+    second: ATree3D_Oak_212
+  - first:
+      4: 400006
+    second: ATree3D_Oak_213
+  - first:
+      4: 400008
+    second: ATree3D_Oak_214
+  - first:
+      4: 400010
+    second: ATree3D_Oak_215
+  - first:
+      4: 400012
+    second: ATree3D_Oak_216
+  - first:
+      4: 400014
+    second: ATree3D_Oak_218
+  - first:
+      4: 400016
+    second: ATree3D_Oak_219
+  - first:
+      4: 400018
+    second: ATree3D_Oak_220
+  - first:
+      4: 400020
+    second: ATree3D_Oak_221
+  - first:
+      4: 400022
+    second: ATree3D_Oak_222
+  - first:
+      4: 400024
+    second: ATree3D_Oak_223
+  - first:
+      4: 400026
+    second: ATree3D_Oak_224
+  - first:
+      4: 400028
+    second: ATree3D_Oak_232
+  - first:
+      4: 400030
+    second: ATree3D_Oak_234
+  - first:
+      4: 400032
+    second: ATree3D_Oak_235
+  - first:
+      4: 400034
+    second: ATree3D_Oak_236
+  - first:
+      21: 2100000
+    second: M_forest_black_cherry
+  - first:
+      23: 2300000
+    second: //RootNode
+  - first:
+      23: 2300002
+    second: ATree3D_Oak_210
+  - first:
+      23: 2300004
+    second: ATree3D_Oak_212
+  - first:
+      23: 2300006
+    second: ATree3D_Oak_213
+  - first:
+      23: 2300008
+    second: ATree3D_Oak_214
+  - first:
+      23: 2300010
+    second: ATree3D_Oak_215
+  - first:
+      23: 2300012
+    second: ATree3D_Oak_216
+  - first:
+      23: 2300014
+    second: ATree3D_Oak_218
+  - first:
+      23: 2300016
+    second: ATree3D_Oak_219
+  - first:
+      23: 2300018
+    second: ATree3D_Oak_220
+  - first:
+      23: 2300020
+    second: ATree3D_Oak_221
+  - first:
+      23: 2300022
+    second: ATree3D_Oak_222
+  - first:
+      23: 2300024
+    second: ATree3D_Oak_223
+  - first:
+      23: 2300026
+    second: ATree3D_Oak_224
+  - first:
+      23: 2300028
+    second: ATree3D_Oak_232
+  - first:
+      23: 2300030
+    second: ATree3D_Oak_234
+  - first:
+      23: 2300032
+    second: ATree3D_Oak_235
+  - first:
+      23: 2300034
+    second: ATree3D_Oak_236
+  - first:
+      33: 3300000
+    second: //RootNode
+  - first:
+      33: 3300002
+    second: ATree3D_Oak_210
+  - first:
+      33: 3300004
+    second: ATree3D_Oak_212
+  - first:
+      33: 3300006
+    second: ATree3D_Oak_213
+  - first:
+      33: 3300008
+    second: ATree3D_Oak_214
+  - first:
+      33: 3300010
+    second: ATree3D_Oak_215
+  - first:
+      33: 3300012
+    second: ATree3D_Oak_216
+  - first:
+      33: 3300014
+    second: ATree3D_Oak_218
+  - first:
+      33: 3300016
+    second: ATree3D_Oak_219
+  - first:
+      33: 3300018
+    second: ATree3D_Oak_220
+  - first:
+      33: 3300020
+    second: ATree3D_Oak_221
+  - first:
+      33: 3300022
+    second: ATree3D_Oak_222
+  - first:
+      33: 3300024
+    second: ATree3D_Oak_223
+  - first:
+      33: 3300026
+    second: ATree3D_Oak_224
+  - first:
+      33: 3300028
+    second: ATree3D_Oak_232
+  - first:
+      33: 3300030
+    second: ATree3D_Oak_234
+  - first:
+      33: 3300032
+    second: ATree3D_Oak_235
+  - first:
+      33: 3300034
+    second: ATree3D_Oak_236
+  - first:
+      43: 4300000
+    second: ATree3D_Oak_193
+  - first:
+      43: 4300002
+    second: ATree3D_Oak_194
+  - first:
+      43: 4300004
+    second: ATree3D_Oak_195
+  - first:
+      43: 4300006
+    second: ATree3D_Oak_200
+  - first:
+      43: 4300008
+    second: ATree3D_Oak_201
+  - first:
+      43: 4300010
+    second: ATree3D_Oak_202
+  - first:
+      43: 4300012
+    second: ATree3D_Oak_205
+  - first:
+      43: 4300014
+    second: ATree3D_Oak_206
+  - first:
+      43: 4300016
+    second: ATree3D_Oak_207
+  - first:
+      43: 4300018
+    second: ATree3D_Oak_209
+  - first:
+      43: 4300020
+    second: ATree3D_Oak_210
+  - first:
+      43: 4300022
+    second: ATree3D_Oak_212
+  - first:
+      43: 4300024
+    second: ATree3D_Oak_213
+  - first:
+      43: 4300026
+    second: ATree3D_Oak_214
+  - first:
+      43: 4300028
+    second: ATree3D_Oak_215
+  - first:
+      43: 4300030
+    second: ATree3D_Oak_216
+  - first:
+      43: 4300032
+    second: ATree3D_Oak_218
+  - first:
+      43: 4300034
+    second: ATree3D_Oak_219
+  - first:
+      43: 4300036
+    second: ATree3D_Oak_220
+  - first:
+      43: 4300038
+    second: ATree3D_Oak_221
+  - first:
+      43: 4300040
+    second: ATree3D_Oak_222
+  - first:
+      43: 4300042
+    second: ATree3D_Oak_223
+  - first:
+      43: 4300044
+    second: ATree3D_Oak_224
+  - first:
+      43: 4300046
+    second: ATree3D_Oak_225
+  - first:
+      43: 4300048
+    second: ATree3D_Oak_226
+  - first:
+      43: 4300050
+    second: ATree3D_Oak_227
+  - first:
+      43: 4300052
+    second: ATree3D_Oak_228
+  - first:
+      43: 4300054
+    second: ATree3D_Oak_229
+  - first:
+      43: 4300056
+    second: ATree3D_Oak_230
+  - first:
+      43: 4300058
+    second: ATree3D_Oak_231
+  - first:
+      43: 4300060
+    second: ATree3D_Oak_232
+  - first:
+      43: 4300062
+    second: ATree3D_Oak_234
+  - first:
+      43: 4300064
+    second: ATree3D_Oak_235
+  - first:
+      43: 4300066
+    second: ATree3D_Oak_236
+  - first:
+      43: 4300068
+    second: Forest_black_cherry_03
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -70,18 +381,19 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -90,10 +402,11 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -103,6 +416,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.7
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

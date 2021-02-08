@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 80
+  m_StaticEditorFlags: 81
   m_IsActive: 1
 --- !u!4 &580224869952072455
 Transform:
@@ -39,7 +39,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580224869951649575}
-  m_Mesh: {fileID: 4300004, guid: c89ab33515cb8744194d4240ba904eff, type: 3}
+  m_Mesh: {fileID: 4300000, guid: c89ab33515cb8744194d4240ba904eff, type: 3}
 --- !u!23 &580224869953841643
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54,6 +54,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -65,6 +66,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 2
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -93,7 +95,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 80
+  m_StaticEditorFlags: 81
   m_IsActive: 1
 --- !u!4 &580224869952072457
 Transform:
@@ -131,6 +133,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -142,6 +145,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 2
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -171,7 +175,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 80
+  m_StaticEditorFlags: 81
   m_IsActive: 1
 --- !u!4 &580224869952072459
 Transform:
@@ -194,7 +198,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580224869951649579}
-  m_Mesh: {fileID: 4300000, guid: c89ab33515cb8744194d4240ba904eff, type: 3}
+  m_Mesh: {fileID: 4300004, guid: c89ab33515cb8744194d4240ba904eff, type: 3}
 --- !u!23 &580224869953841647
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -209,6 +213,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -220,6 +225,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 2
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -245,7 +251,7 @@ MeshCollider:
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
-  m_Mesh: {fileID: 4300004, guid: c89ab33515cb8744194d4240ba904eff, type: 3}
+  m_Mesh: {fileID: 4300000, guid: c89ab33515cb8744194d4240ba904eff, type: 3}
 --- !u!1 &580224869951649583
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,15 +300,15 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.40959477
+  - screenRelativeHeight: 0.339424
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 580224869953841647}
-  - screenRelativeHeight: 0.15132728
+  - screenRelativeHeight: 0.13695918
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 580224869953841645}
-  - screenRelativeHeight: 0.053106803
+  - screenRelativeHeight: 0.038400758
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 580224869953841643}

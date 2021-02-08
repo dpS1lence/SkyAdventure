@@ -14,7 +14,7 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.04257553
+  - screenRelativeHeight: 0.026872503
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 3655686780083917272}
@@ -26,16 +26,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4668638906506263519, guid: 7e5be4f13db974340b3c363b704ae130,
-        type: 3}
-      propertyPath: m_Name
-      value: prefab_grass_03_3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4668638906506263519, guid: 7e5be4f13db974340b3c363b704ae130,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 80
-      objectReference: {fileID: 0}
     - target: {fileID: 4668638906505766911, guid: 7e5be4f13db974340b3c363b704ae130,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -91,11 +81,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2207516521710711502, guid: 7e5be4f13db974340b3c363b704ae130,
+    - target: {fileID: 4668638906506263519, guid: 7e5be4f13db974340b3c363b704ae130,
         type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300002, guid: 70476273fc8e7f646ba881cc54df9661, type: 3}
+      propertyPath: m_Name
+      value: prefab_grass_03_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668638906506263519, guid: 7e5be4f13db974340b3c363b704ae130,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 81
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e5be4f13db974340b3c363b704ae130, type: 3}
 --- !u!1 &3513519379114454384 stripped
