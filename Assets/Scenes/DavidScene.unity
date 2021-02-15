@@ -103873,7 +103873,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &6360691590191666305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103886,8 +103886,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb8c140fde99444c9fcf73b23b075e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 0}
-  player: {fileID: 0}
+  playerCamera: {fileID: 1486685955}
+  player: {fileID: 1028961806}
   hoverCar: {fileID: 6360691590191666304}
   hoverCarCamera: {fileID: 6360691591115574037}
   range: 10
