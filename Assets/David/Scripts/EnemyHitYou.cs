@@ -4,25 +4,12 @@ using UnityEngine;
 
 public class EnemyHitYou : MonoBehaviour
 {
-    public GameObject fpsCam;
-    public float range = 30.0f;
-
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter(Collision other) 
     {
-
-    }
-    private void Update() 
-    {
-        RaycastHit hit;
-
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        Debug.Log(other.collider.name);
+        /*if(other.collider.tag == "enemy hands")
         {
-            Debug.Log(hit.collider.name);
-            if (hit.collider.tag == "FPS")
-            {
-                Debug.Log("hit");
-            }  
-        }
+            Debug.Log("gdfjagdfjgajdfg");
+        }*/
     }
 }

@@ -27,7 +27,7 @@ public class tnt : MonoBehaviour
 
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            Debug.Log(hit.collider.name);
+            //Debug.Log(hit.collider.name);
             if (hit.collider.tag == "tnt1")
             {
                 if(Input.GetKeyDown(KeyCode.E))
