@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour
 
 
     //caught player
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
