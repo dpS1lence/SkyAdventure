@@ -12,6 +12,7 @@ public class tnt : MonoBehaviour
     public GameObject tntExplosionParticles2;
     public GameObject player;
     public GameObject fpsCam;
+    public GameObject tntmain;
     public float range = 30.0f;
 
     // Start is called before the first frame update
@@ -31,10 +32,15 @@ public class tnt : MonoBehaviour
             {
                 if(Input.GetKeyDown(KeyCode.E))
                 {
-                    tnt1.SetActive(false);
-                    tnt2.SetActive(true);               
+                    tnt1.SetActive(false);              
                 }
             }
+            if (hit.collider.tag == "tntmain" && Input.GetKeyDown(KeyCode.E))
+            {
+                tnt2.SetActive(true); 
+                tntmain.SetActive(false);
+            }
+
             if (hit.collider.tag == "tnt2")
             {
                 if(Input.GetKeyDown(KeyCode.E))
@@ -44,7 +50,8 @@ public class tnt : MonoBehaviour
                     tnt2.SetActive(false);
                     Destroy(rocks);             
                 }
-            }            
+            }  
+                      
         }
     }
 }
