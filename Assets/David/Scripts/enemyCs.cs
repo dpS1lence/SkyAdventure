@@ -22,8 +22,8 @@ public class enemyCs : MonoBehaviour
     
     public void Stun()
     {
-        GetComponent<Enemy>().enabled = false;
-        goblinAnim.gameObject.GetComponent<Animator>().enabled = false;
+        //GetComponent<Enemy>().enabled = false;
+        //goblinAnim.gameObject.GetComponent<Animator>().enabled = false;
 
     }
 

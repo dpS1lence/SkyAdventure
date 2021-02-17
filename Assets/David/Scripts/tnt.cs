@@ -14,10 +14,15 @@ public class tnt : MonoBehaviour
     public GameObject fpsCam;
     public GameObject tntmain;
     public float range = 30.0f;
+    public GameObject uIMenu1;
+    public GameObject uIMenu2;
+    int a = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        uIMenu1.SetActive(false);
+        uIMenu2.SetActive(false);
         tnt2.SetActive(false);
         tntExplosionParticles.SetActive(false);
     }
@@ -30,28 +35,40 @@ public class tnt : MonoBehaviour
             //Debug.Log(hit.collider.name);
             if (hit.collider.tag == "tnt1")
             {
+                uIMenu1.SetActive(true);
                 if(Input.GetKeyDown(KeyCode.E))
                 {
-                    tnt1.SetActive(false);              
+                    uIMenu1.SetActive(true);
+                    tnt1.SetActive(false); 
+                    a += 1;             
                 }
             }
-            if (hit.collider.tag == "tntmain" && Input.GetKeyDown(KeyCode.E))
+            else
             {
-                tnt2.SetActive(true); 
-                tntmain.SetActive(false);
+                uIMenu1.SetActive(false);
             }
+            if(a >= 1)
+            {
+                if (hit.collider.tag == "tntmain" && Input.GetKeyDown(KeyCode.E))
+                {
+                    tnt2.SetActive(true); 
+                    tntmain.SetActive(false);
+                }
 
-            if (hit.collider.tag == "tnt2")
-            {
-                if(Input.GetKeyDown(KeyCode.E))
+                if (hit.collider.tag == "tnt2")
                 {
-                    tntExplosionParticles.SetActive(true);
-                    Destroy(tntExplosionParticles2, 2);
-                    tnt2.SetActive(false);
-                    Destroy(rocks);             
-                }
-            }  
+                    if(Input.GetKeyDown(KeyCode.E))
+                    {
+                        tntExplosionParticles.SetActive(true);
+                        Destroy(tntExplosionParticles2, 2);
+                        tnt2.SetActive(false);
+                        Destroy(rocks);             
+                    }
+                }  
+            }
+            
                       
         }
     }
+    
 }
