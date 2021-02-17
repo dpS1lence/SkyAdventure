@@ -16,6 +16,9 @@ public class tnt : MonoBehaviour
     public float range = 30.0f;
     public GameObject uIMenu1;
     public GameObject uIMenu2;
+    public GameObject miniMap;
+    public GameObject miniMaptext;
+    public GameObject miniMapMap;
     int a = 0;
 
     // Start is called before the first frame update
@@ -24,6 +27,7 @@ public class tnt : MonoBehaviour
         uIMenu1.SetActive(false);
         uIMenu2.SetActive(false);
         tnt2.SetActive(false);
+        miniMap.SetActive(false);
         tntExplosionParticles.SetActive(false);
     }
     private void Update() 
@@ -46,6 +50,12 @@ public class tnt : MonoBehaviour
             else
             {
                 uIMenu1.SetActive(false);
+            }
+            if(Input.GetKeyDown(KeyCode.M))
+            {
+                miniMap.SetActive(true);
+                miniMaptext.SetActive(false);
+                miniMapMap.SetActive(false);
             }
             if(a >= 1)
             {

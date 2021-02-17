@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
     public Transform player;
 
     public double range;
+    public GameObject uiDead;
+    public GameObject uiRemove;
 
 
     // Update is called once per frame
@@ -33,6 +35,6 @@ public class Enemy : MonoBehaviour
     //caught player
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
     }
 }
