@@ -19,6 +19,9 @@ public class tnt : MonoBehaviour
     public GameObject miniMap;
     public GameObject miniMaptext;
     public GameObject miniMapMap;
+    public GameObject cameraminimap;
+    public GameObject positionMiniMap;
+    public GameObject positionPos;
     int a = 0;
 
     // Start is called before the first frame update
@@ -67,14 +70,20 @@ public class tnt : MonoBehaviour
 
                 if (hit.collider.tag == "tnt2")
                 {
+                    uIMenu2.SetActive(true);
                     if(Input.GetKeyDown(KeyCode.E))
                     {
                         tntExplosionParticles.SetActive(true);
                         Destroy(tntExplosionParticles2, 2);
                         tnt2.SetActive(false);
-                        Destroy(rocks);             
+                        Destroy(rocks);       
+                        cameraminimap.transform.position = positionMiniMap.transform.position;      
                     }
                 }  
+                else
+                {
+                    uIMenu2.SetActive(false);
+                }
             }
             
                       
