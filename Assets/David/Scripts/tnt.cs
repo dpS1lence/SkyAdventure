@@ -22,6 +22,8 @@ public class tnt : MonoBehaviour
     public GameObject cameraminimap;
     public GameObject positionMiniMap;
     public GameObject positionPos;
+    public GameObject audioaaa;
+    public GameObject audioaaaa;
     int a = 0;
 
     // Start is called before the first frame update
@@ -45,6 +47,7 @@ public class tnt : MonoBehaviour
                 uIMenu1.SetActive(true);
                 if(Input.GetKeyDown(KeyCode.E))
                 {
+                    audioaaa.SetActive(true);
                     uIMenu1.SetActive(true);
                     tnt1.SetActive(false); 
                     a += 1;             
@@ -66,6 +69,7 @@ public class tnt : MonoBehaviour
                 {
                     tnt2.SetActive(true); 
                     tntmain.SetActive(false);
+                    audioaaaa.SetActive(true);                    
                 }
 
                 if (hit.collider.tag == "tnt2")
