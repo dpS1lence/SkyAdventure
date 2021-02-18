@@ -26,6 +26,8 @@ public class tnt : MonoBehaviour
     public GameObject audioaaaa;
     int a = 0;
 
+    bool showInfo = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -89,9 +91,88 @@ public class tnt : MonoBehaviour
                     uIMenu2.SetActive(false);
                 }
             }
-            
-                      
+
+            if (hit.collider.name == "Gold" && Input.GetKeyDown(KeyCode.E))
+            {
+                showInfo = true;
+            }          
+        }
+
+        if (showInfo)
+        {
+            Information();
         }
     }
-    
+
+
+    int k = 0;
+
+    public GameObject info;
+
+    public Transform text;
+
+    Transform currentWeapon = null;
+
+    public GameObject backArrow;
+    public GameObject nextArrow;
+    public GameObject thickArrow;
+
+    void Information()
+    {
+        Time.timeScale = 0;
+        info.SetActive(true);
+
+        if (k <= 0)
+        {
+            k = 0;
+            backArrow.SetActive(false);
+        }
+        else if (k >= text.childCount)
+        {
+            nextArrow.SetActive(false);
+            thickArrow.SetActive(true);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            k--;
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            k++;
+
+            if (k >= text.childCount)
+            {
+                k = 0;
+                info.SetActive(false);
+                showInfo = false;
+                Time.timeScale = 1;
+
+                for (int i = 0; i < text.childCount; i++)
+                {
+                    text.GetChild(i).gameObject.SetActive(false);
+                }
+            }
+        }
+
+        currentWeapon = text.GetChild(k);
+        currentWeapon.gameObject.SetActive(true);
+
+        try
+        {
+            text.transform.GetChild(k + 1).gameObject.SetActive(false);
+        }
+        catch (System.Exception)
+        {
+        }
+
+        try
+        {
+            text.transform.GetChild(k - 1).gameObject.SetActive(false);
+        }
+        catch (System.Exception)
+        {
+        }
+
+    }
 }

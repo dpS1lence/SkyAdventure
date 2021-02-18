@@ -13,6 +13,14 @@ public class Enemy : MonoBehaviour
     public GameObject uiDead;
     public GameObject uiRemove;
 
+    public GameObject deathScrene;
+    public GameObject miniMap;
+    public bool death;
+
+    private void Start()
+    {
+        death = false;
+    }
 
     // Update is called once per frame
     void Update()
@@ -29,12 +37,23 @@ public class Enemy : MonoBehaviour
             //staying on place
             GetComponent<NavMeshAgent>().destination = gameObject.transform.position;
         }
+
+
+        if (death == true && Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Time.timeScale = 1;
+            deathScrene.SetActive(false);
+        }
     }
 
 
     //caught player
     private void OnTriggerEnter(Collider other)
     {
-        
+        Time.timeScale = 0;
+        deathScrene.SetActive(true);
+        miniMap.SetActive(false);
+        death = true;
     }
 }
