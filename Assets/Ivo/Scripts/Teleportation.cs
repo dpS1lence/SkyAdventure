@@ -5,14 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class Teleportation : MonoBehaviour
 {
-    public Transform toTP;
+    public GameObject tpLocation;
+    public GameObject tpObject;
+    public GameObject spaceShip;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            SceneManager.LoadScene("SpaceShip");
+            spaceShip.SetActive(true);
+            tpObject.transform.position = tpLocation.transform.position;
         }
     }
 }
