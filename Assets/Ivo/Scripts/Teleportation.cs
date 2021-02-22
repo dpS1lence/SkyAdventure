@@ -16,6 +16,8 @@ public class Teleportation : MonoBehaviour
         {
             spaceShip.SetActive(true);
             tpObject.transform.position = tpLocation.transform.position;
+            
         }
     }
+    
 }
