@@ -24,6 +24,8 @@ public class tnt : MonoBehaviour
     public GameObject positionPos;
     public GameObject audioaaa;
     public GameObject audioaaaa;
+    public GameObject enemy;
+    public GameObject enemyCol;
     int a = 0;
 
     bool showInfo = false;
@@ -40,7 +42,7 @@ public class tnt : MonoBehaviour
     private void Update() 
     {
         RaycastHit hit;
-
+        enemyCol.transform.position = enemy.transform.position;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             //Debug.Log(hit.collider.name);
@@ -89,6 +91,17 @@ public class tnt : MonoBehaviour
                 else
                 {
                     uIMenu2.SetActive(false);
+                }
+            }
+            if (hit.collider.tag == "Enemy")
+            {
+                Debug.Log("hit1");
+                uIMenu1.SetActive(true);
+                if(Input.GetButtonDown("Fire1"))
+                {
+                    Debug.Log("hit2");
+                    enemy.SetActive(false); 
+                    enemyCol.SetActive(true);      
                 }
             }
 

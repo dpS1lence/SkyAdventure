@@ -18,7 +18,7 @@ public class enemyDieTrash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetButtonDown("Fire1"))
         {
             Shoot();
         }
@@ -31,7 +31,7 @@ public class enemyDieTrash : MonoBehaviour
         {
             if (hit.collider.tag == "Enemy")
             {
-
+                Destroy(player);
             }
         }
     }
