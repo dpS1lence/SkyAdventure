@@ -12,8 +12,12 @@ public class tnt : MonoBehaviour
     public GameObject tntExplosionParticles2;
     public GameObject player;
     public GameObject fpsCam;
+    public GameObject objectP;
+    public GameObject raycastCam;
     public GameObject tntmain;
+    public GameObject counterCam;
     public float range = 30.0f;
+    public float range2 = 6.0f;
     public GameObject uIMenu1;
     public GameObject uIMenu2;
     public GameObject miniMap;
@@ -43,6 +47,7 @@ public class tnt : MonoBehaviour
     {
         RaycastHit hit;
         enemyCol.transform.position = enemy.transform.position;
+        counterCam.transform.position = enemy.transform.position;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             //Debug.Log(hit.collider.name);
@@ -92,17 +97,7 @@ public class tnt : MonoBehaviour
                 {
                     uIMenu2.SetActive(false);
                 }
-            }
-            if (hit.collider.tag == "Enemy")
-            {
-                Debug.Log("hit1");
-                uIMenu1.SetActive(true);
-                if(Input.GetButtonDown("Fire1"))
-                {
-                    Debug.Log("hit2");
-                    enemy.SetActive(false); 
-                    enemyCol.SetActive(true);      
-                }
+                
             }
 
             if (hit.collider.name == "Gold" && Input.GetKeyDown(KeyCode.E))
@@ -110,11 +105,28 @@ public class tnt : MonoBehaviour
                 showInfo = true;
             }          
         }
+        if (Physics.Raycast(raycastCam.transform.position, raycastCam.transform.forward, out hit, range2))
+        {
+            Debug.Log(hit.collider.name);
+            if (hit.collider.tag == "Enemy")
+            {
+                Debug.Log("hit1");
+                Debug.Log(hit.collider.name);
+                uIMenu1.SetActive(true);
+                if(Input.GetMouseButtonDown(0))
+                {
+                    Debug.Log("hit2");
+                    enemy.SetActive(false); 
+                    enemyCol.SetActive(true);      
+                }
+            }
+        }
 
         if (showInfo)
         {
             Information();
         }
+        
     }
 
 
