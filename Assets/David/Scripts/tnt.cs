@@ -30,6 +30,8 @@ public class tnt : MonoBehaviour
     public GameObject audioaaaa;
     public GameObject enemy;
     public GameObject enemyCol;
+    public Animation torchIdle;
+    public Animation torchHit;
     int a = 0;
 
     bool showInfo = false;
@@ -45,9 +47,14 @@ public class tnt : MonoBehaviour
     }
     private void Update() 
     {
+        if(Input.GetMouseButtonDown(0))
+        {
+            torchHit.Play();
+        }
+        
         RaycastHit hit;
         enemyCol.transform.position = enemy.transform.position;
-        counterCam.transform.position = enemy.transform.position;
+        //counterCam.transform.position = enemy.transform.position;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             //Debug.Log(hit.collider.name);
@@ -115,6 +122,7 @@ public class tnt : MonoBehaviour
                 uIMenu1.SetActive(true);
                 if(Input.GetMouseButtonDown(0))
                 {
+                    torchHit.Play();
                     Debug.Log("hit2");
                     enemy.SetActive(false); 
                     enemyCol.SetActive(true);      
