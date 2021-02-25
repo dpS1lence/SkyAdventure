@@ -5618,7 +5618,7 @@ GameObject:
   - component: {fileID: 129773162}
   - component: {fileID: 129773163}
   m_Layer: 0
-  m_Name: collllll
+  m_Name: coliderTpToShip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48172,7 +48172,7 @@ PrefabInstance:
     - target: {fileID: 6571694486408424345, guid: 897260e7102e2354594b223d812d3ecc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6571694486408424348, guid: 897260e7102e2354594b223d812d3ecc,
         type: 3}
@@ -48282,6 +48282,21 @@ PrefabInstance:
     - target: {fileID: 6571694486408424349, guid: 897260e7102e2354594b223d812d3ecc,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571694486408424349, guid: 897260e7102e2354594b223d812d3ecc,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571694486408424349, guid: 897260e7102e2354594b223d812d3ecc,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571694486408424349, guid: 897260e7102e2354594b223d812d3ecc,
+        type: 3}
+      propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6571694486408424351, guid: 897260e7102e2354594b223d812d3ecc,
@@ -55041,10 +55056,10 @@ MonoBehaviour:
   tpObject: {fileID: 1028961806}
   spaceShip: {fileID: 2096946018}
   camerka1: {fileID: 1486685952}
-  camerka2: {fileID: 1863717261}
-  fpsCam: {fileID: 1863717261}
+  fpsCam: {fileID: 1486685952}
   consoleIDPanel: {fileID: 1604868824}
   consolePanelslUI: {fileID: 1286852415}
+  spaceStantion: {fileID: 1439585992}
   range: 10
 --- !u!82 &1028961812
 AudioSource:
@@ -71480,12 +71495,12 @@ PrefabInstance:
     - target: {fileID: 3622167563702505803, guid: 2c2f1708185129342809f2ff3060d6cf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 120.75
+      value: 75.9121
       objectReference: {fileID: 0}
     - target: {fileID: 3622167563702505803, guid: 2c2f1708185129342809f2ff3060d6cf,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 393.7
+      value: 654
       objectReference: {fileID: 0}
     - target: {fileID: 3622167563702505803, guid: 2c2f1708185129342809f2ff3060d6cf,
         type: 3}
@@ -71545,7 +71560,7 @@ PrefabInstance:
     - target: {fileID: 3622167564269117339, guid: 2c2f1708185129342809f2ff3060d6cf,
         type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 32567
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3622167564269117340, guid: 2c2f1708185129342809f2ff3060d6cf,
         type: 3}
@@ -74916,7 +74931,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1439585993
 Transform:
   m_ObjectHideFlags: 0
