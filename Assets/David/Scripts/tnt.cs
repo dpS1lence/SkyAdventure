@@ -32,6 +32,7 @@ public class tnt : MonoBehaviour
     public GameObject enemyCol;
     public Animation torchIdle;
     public Animation torchHit;
+
     int a = 0;
 
     bool showInfo = false;
