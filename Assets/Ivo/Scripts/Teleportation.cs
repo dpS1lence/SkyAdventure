@@ -56,7 +56,7 @@ public class Teleportation : MonoBehaviour
                     consolePanelslUI.SetActive(true);
                     Destroy(consoleIDPanel);
                 }
-            }
+            } 
             else
             {
                 consoleIDPanel.SetActive(false);
