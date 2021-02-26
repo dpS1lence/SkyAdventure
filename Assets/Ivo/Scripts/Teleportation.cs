@@ -9,7 +9,7 @@ public class Teleportation : MonoBehaviour
     public GameObject tpObject;
     public GameObject spaceShip;
     public GameObject camerka1;
-    //public GameObject camerka2;
+    public GameObject camerka2;
     public GameObject fpsCam;
     public GameObject consoleIDPanel;
     public GameObject consolePanelslUI;
@@ -45,7 +45,9 @@ public class Teleportation : MonoBehaviour
                 if(Input.GetButton("Fire1"))
                 {
                     Debug.Log("MouseHit");
-                    SceneManager.LoadScene("DavidScene_2");
+                    camerka2.SetActive(true);
+                    camerka1.SetActive(true);
+                    //SceneManager.LoadScene("DavidScene_2");
                 }
             }
             else if (hit.collider.name == "console")
