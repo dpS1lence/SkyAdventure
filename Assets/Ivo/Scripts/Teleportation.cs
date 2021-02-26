@@ -14,7 +14,7 @@ public class Teleportation : MonoBehaviour
     public GameObject consoleIDPanel;
     public GameObject consolePanelslUI;
     public GameObject spaceStantion;
-    public float range = 10.0f;
+    public float range = 15.0f;
     
 
     // Update is called once per frame
@@ -39,19 +39,6 @@ public class Teleportation : MonoBehaviour
                     //camerka2.SetActive(true);
                 }
             }
-            else if (hit.collider.name == "console")
-            {
-                consoleIDPanel.SetActive(true);
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    consolePanelslUI.SetActive(true);
-                    Destroy(consoleIDPanel);
-                }
-            }
-            /*else
-            {
-                consoleIDPanel.SetActive(false);
-            }*/
             else if(hit.collider.name == "UiLeft")
             {
                 Debug.Log("MouseHit");
@@ -61,10 +48,19 @@ public class Teleportation : MonoBehaviour
                     SceneManager.LoadScene("DavidScene_2");
                 }
             }
-
-
+            else if (hit.collider.name == "console")
+            {
+                consoleIDPanel.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    consolePanelslUI.SetActive(true);
+                    Destroy(consoleIDPanel);
+                }
+            }
+            else
+            {
+                consoleIDPanel.SetActive(false);
+            }
         }   
     }
-    
-    
 }
