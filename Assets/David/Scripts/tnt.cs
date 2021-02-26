@@ -33,6 +33,7 @@ public class tnt : MonoBehaviour
     public Animation torchIdle;
     public Animation torchHit;
 
+
     int a = 0;
 
     bool showInfo = false;
@@ -50,7 +51,7 @@ public class tnt : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            torchHit.Play();
+            //torchHit.Play();
         }
         
         RaycastHit hit;
@@ -123,10 +124,12 @@ public class tnt : MonoBehaviour
                 uIMenu1.SetActive(true);
                 if(Input.GetMouseButtonDown(0))
                 {
-                    torchHit.Play();
+                    //torchHit.Play();
                     Debug.Log("hit2");
-                    enemy.SetActive(false); 
-                    enemyCol.SetActive(true);      
+                    //enemy.SetActive(false); 
+
+
+                    enemyCol.SetActive(true);
                 }
             }
         }
@@ -139,7 +142,7 @@ public class tnt : MonoBehaviour
     }
 
 
-    int k = 0;
+    public int k = 0;
 
     public GameObject info;
 
@@ -160,11 +163,19 @@ public class tnt : MonoBehaviour
         {
             k = 0;
             backArrow.SetActive(false);
+            thickArrow.SetActive(false);
+            nextArrow.SetActive(true);
         }
-        else if (k >= text.childCount)
+        else if (k == text.childCount - 1)
         {
             nextArrow.SetActive(false);
             thickArrow.SetActive(true);
+        }
+        else
+        {
+            nextArrow.SetActive(true);
+            backArrow.SetActive(true);
+            thickArrow.SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))

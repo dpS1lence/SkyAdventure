@@ -10,12 +10,13 @@ public class Enemy : MonoBehaviour
     public Transform player;
 
     public double range;
-    public GameObject uiDead;
-    public GameObject uiRemove;
 
     public GameObject deathScrene;
     public GameObject miniMap;
     public bool death;
+
+    public Animator animP;
+    public Animator animE;
 
     private void Start()
     {
@@ -25,17 +26,19 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Vector3.Distance(gameObject.transform.position, player.position) < range)
+        if (!Input.GetKey(KeyCode.Mouse0))
         {
+            animP.SetBool("hit", false);
+            animE.SetBool("scared", false);
+
             //close to player
             GetComponent<NavMeshAgent>().destination = player.transform.position;
-
         }
         else
         {
-            //staying on place
-            GetComponent<NavMeshAgent>().destination = gameObject.transform.position;
+            animP.SetBool("hit", true);
+            animE.SetBool("scared", true);
+            GetComponent<NavMeshAgent>().destination = transform.position;
         }
 
 
@@ -51,7 +54,7 @@ public class Enemy : MonoBehaviour
     //caught player
     private void OnTriggerEnter(Collider other)
     {
-        Time.timeScale = 0;
+       Time.timeScale = 0;
         deathScrene.SetActive(true);
         miniMap.SetActive(false);
         death = true;
