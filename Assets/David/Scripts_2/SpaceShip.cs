@@ -11,6 +11,7 @@ public class SpaceShip : MonoBehaviour
     public GameObject camera1;
     public GameObject camera2;
     public GameObject ship;
+    public GameObject sound;
     public float range = 5.0f;
 
     // Start is called before the first frame update
@@ -27,6 +28,7 @@ public class SpaceShip : MonoBehaviour
         {
             if (hit.collider.name == "deskColider")
             {
+                sound.SetActive(true);
                 if (timeRemaining > 0)
                 {   
                     timeRemaining -= Time.deltaTime;

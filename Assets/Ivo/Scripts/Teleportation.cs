@@ -14,6 +14,8 @@ public class Teleportation : MonoBehaviour
     public GameObject consoleIDPanel;
     public GameObject consolePanelslUI;
     public GameObject spaceStantion;
+    public GameObject mouseCursur;
+    public GameObject infoUILeft;
     public float range = 15.0f;
     
 
@@ -41,12 +43,14 @@ public class Teleportation : MonoBehaviour
             }
             else if(hit.collider.name == "UiLeft")
             {
+                infoUILeft.SetActive(true);
                 Debug.Log("MouseHit");
                 if(Input.GetButton("Fire1"))
                 {
                     Debug.Log("MouseHit");
                     camerka2.SetActive(true);
                     camerka1.SetActive(true);
+                    mouseCursur.SetActive(false);
                     //SceneManager.LoadScene("DavidScene_2");
                 }
             }
@@ -55,6 +59,7 @@ public class Teleportation : MonoBehaviour
                 consoleIDPanel.SetActive(true);
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    mouseCursur.SetActive(true);
                     consolePanelslUI.SetActive(true);
                     Destroy(consoleIDPanel);
                 }
