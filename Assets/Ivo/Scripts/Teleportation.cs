@@ -22,6 +22,10 @@ public class Teleportation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            //tpObject.transform.position = tpLocation.transform.position;
+        }
         Ray();
     }
     
