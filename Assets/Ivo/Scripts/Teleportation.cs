@@ -38,9 +38,11 @@ public class Teleportation : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    tpObject.SetActive(false);
+                    tpObject.transform.position = tpLocation.transform.position;
+                    tpObject.SetActive(true);
                     spaceStantion.SetActive(true);
                     spaceShip.SetActive(true);
-                    tpObject.transform.position = tpLocation.transform.position;
                     //camerka1.SetActive(false);
                     //camerka2.SetActive(true);
                 }
