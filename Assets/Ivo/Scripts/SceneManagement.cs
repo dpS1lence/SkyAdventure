@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class SceneManagement : MonoBehaviour
 {
+    public GameObject loadingMenu;
     public Slider slider;
 
     public void ReLoad()
@@ -25,6 +26,15 @@ public class SceneManagement : MonoBehaviour
 
     IEnumerator LoadASYN(string levelName)
     {
+        try
+        {
+            loadingMenu.SetActive(true);
+
+        }
+        catch (System.Exception)
+        {
+        }
+
         AsyncOperation opeartaion = SceneManager.LoadSceneAsync(levelName);
 
         while (!opeartaion.isDone)

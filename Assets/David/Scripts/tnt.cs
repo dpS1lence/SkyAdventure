@@ -158,6 +158,7 @@ public class tnt : MonoBehaviour
     {
         Time.timeScale = 0;
         info.SetActive(true);
+        miniMap.SetActive(false);
 
         if (k <= 0)
         {
@@ -190,6 +191,7 @@ public class tnt : MonoBehaviour
             {
                 k = 0;
                 info.SetActive(false);
+                miniMap.SetActive(false);
                 showInfo = false;
                 Time.timeScale = 1;
 

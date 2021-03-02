@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class GettingItem : MonoBehaviour
 {
+    public GameObject SM;
     public Camera cam;
     public GameObject player;
 
     public Animator anim;
     public float animationLenght = 1f;
+    public float range = 100f;
 
     public GameObject cutsceneCam;
 
@@ -28,9 +30,9 @@ public class GettingItem : MonoBehaviour
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit))
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range))
         {
-            Debug.Log("Raycast");
+            Debug.Log(hit.collider.name);
 
             if (hit.collider.tag == "item")
             {
@@ -54,6 +56,11 @@ public class GettingItem : MonoBehaviour
                 hit.collider.gameObject.GetComponent<Animator>().SetBool("open", true);
                 Debug.Log("Open Chest");
                 //open
+            }
+            else if (hit.collider.name == "door_01")
+            {
+                Debug.Log("exit");
+                SM.GetComponent<SceneManagement>().LoadScene("SpaceShip");
             }
         }
     }
