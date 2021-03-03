@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Teleportation : MonoBehaviour
 {
-    public GameObject loadBar;
     public GameObject tpLocation;
     public GameObject tpObject;
     public GameObject spaceShip;
@@ -60,8 +59,6 @@ public class Teleportation : MonoBehaviour
                     mouseCursur.SetActive(false);
 
                     //SceneManager.LoadScene("DavidScene_2");
-
-                    StartCoroutine(NextSceneLoading());
                 }
             }
             else if (hit.collider.name == "console")
@@ -79,15 +76,5 @@ public class Teleportation : MonoBehaviour
                 consoleIDPanel.SetActive(false);
             }
         }   
-    }
-
-    public GameObject SceneManager;
-
-    IEnumerator NextSceneLoading()
-    {
-        yield return new WaitForSeconds(23);
-
-        loadBar.SetActive(true);
-        SceneManager.GetComponent<SceneManagement>().LoadScene("DavidScene_2");
     }
 }

@@ -41,7 +41,7 @@ public class GettingItem : MonoBehaviour
                 Debug.Log("Item");
 
                 cutsceneCam.SetActive(true);
-                player.GetComponent<FpsController>().enabled = false;
+                player.GetComponent<FirstPersson>().enabled = false;
                 anim.SetBool("open", true);
                 Destroy(hit.collider.gameObject);
                 StartCoroutine(FinishCut());
@@ -70,7 +70,7 @@ public class GettingItem : MonoBehaviour
     {
         yield return new WaitForSeconds(animationLenght);
 
-        player.GetComponent<FpsController>().enabled = true;
+        player.GetComponent<FirstPersson>().enabled = true;
         cutsceneCam.SetActive(false);
     }
 }
