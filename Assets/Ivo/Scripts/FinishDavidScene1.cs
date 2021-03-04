@@ -9,6 +9,8 @@ public class FinishDavidScene1 : MonoBehaviour
     public GameObject loadMenu;
     public Slider slider;
 
+    bool finish = false;
+
     private void Start()
     {
         loadMenu.SetActive(false);
@@ -17,8 +19,9 @@ public class FinishDavidScene1 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "Finish")
+        if (other.name == "Finish" && !finish)
         {
+            finish = true;
             loadMenu.SetActive(true);
             StartCoroutine(LoadASYN("DavidScene_2"));
         }

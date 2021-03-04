@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Teleportation : MonoBehaviour
 {
     public GameObject tpLocation;
+    public GameObject UiMid;
     public GameObject tpObject;
     public GameObject spaceShip;
     public GameObject camerka1;
@@ -60,6 +61,10 @@ public class Teleportation : MonoBehaviour
 
                     //SceneManager.LoadScene("DavidScene_2");
                 }
+            }
+            else if(hit.collider.name == "UiMid" && Input.GetButton("Fire1"))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
             else if (hit.collider.name == "console")
             {

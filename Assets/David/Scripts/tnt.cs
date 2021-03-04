@@ -20,6 +20,7 @@ public class tnt : MonoBehaviour
     public float range2 = 6.0f;
     public GameObject uIMenu1;
     public GameObject uIMenu2;
+    public GameObject uIMenuGold;
     public GameObject miniMap;
     public GameObject miniMaptext;
     public GameObject miniMapMap;
@@ -109,9 +110,17 @@ public class tnt : MonoBehaviour
                 
             }
 
-            if (hit.collider.name == "Gold" && Input.GetKeyDown(KeyCode.E))
+            if (hit.collider.name == "Gold")
             {
-                showInfo = true;
+                uIMenuGold.SetActive(true);
+                if(Input.GetKeyDown(KeyCode.E))
+                {
+                    uIMenu2.SetActive(false);
+                    showInfo = true;
+                }
+            }
+            else{
+                uIMenuGold.SetActive(false);
             }          
         }
         if (Physics.Raycast(raycastCam.transform.position, raycastCam.transform.forward, out hit, range2))

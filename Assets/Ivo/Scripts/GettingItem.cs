@@ -14,12 +14,11 @@ public class GettingItem : MonoBehaviour
 
     public GameObject cutsceneCam;
 
-    bool hasItem = false;
     bool canOpen = false;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && hasItem == false)
+        if (Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("Shot");
             InstateRaycast();
@@ -36,7 +35,7 @@ public class GettingItem : MonoBehaviour
 
             if (hit.collider.tag == "item")
             {
-                hasItem = true;
+                
 
                 Debug.Log("Item");
 

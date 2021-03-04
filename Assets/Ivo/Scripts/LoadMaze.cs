@@ -16,7 +16,7 @@ public class LoadMaze : MonoBehaviour
         {
             if (hit.collider.tag == "Gate")
             {
-                SceneManager.LoadScene("Maze");
+                SceneManager.LoadScene("SpaceShip");
             }
         }
     }
