@@ -17,6 +17,8 @@ public class Teleportation : MonoBehaviour
     public GameObject spaceStantion;
     public GameObject mouseCursur;
     public GameObject infoUILeft;
+    public GameObject portalParticles;
+    public Animator portalA;
     public float range = 15.0f;
     
 
@@ -35,17 +37,21 @@ public class Teleportation : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            if (hit.collider.name == "coliderTpToShip")
+            if (hit.collider.name == "consol")
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    portalA.SetBool("portal", true);
+                    portalParticles.SetActive(true);
                     tpObject.SetActive(false);
+                    tpObject.transform.rotation = tpLocation.transform.rotation;
                     tpObject.transform.position = tpLocation.transform.position;
                     tpObject.SetActive(true);
                     spaceStantion.SetActive(true);
                     spaceShip.SetActive(true);
                     //camerka1.SetActive(false);
                     //camerka2.SetActive(true);
+
                 }
             }
             else if(hit.collider.name == "UiLeft")
