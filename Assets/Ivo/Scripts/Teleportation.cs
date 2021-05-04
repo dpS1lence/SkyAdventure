@@ -18,9 +18,15 @@ public class Teleportation : MonoBehaviour
     public GameObject mouseCursur;
     public GameObject infoUILeft;
     public GameObject portalParticles;
-    public Animator portalA;
+    public GameObject circle;
+    public GameObject triggerB;
     public float range = 15.0f;
+    bool teleport = false;
     
+    void Start()
+    {
+        triggerB.SetActive(false);
+    }
 
     // Update is called once per frame
     void Update()
@@ -41,17 +47,10 @@ public class Teleportation : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    portalA.SetBool("portal", true);
+                    circle.SetActive(false);
+                    triggerB.SetActive(true);
+                    teleport = true;
                     portalParticles.SetActive(true);
-                    tpObject.SetActive(false);
-                    tpObject.transform.rotation = tpLocation.transform.rotation;
-                    tpObject.transform.position = tpLocation.transform.position;
-                    tpObject.SetActive(true);
-                    spaceStantion.SetActive(true);
-                    spaceShip.SetActive(true);
-                    //camerka1.SetActive(false);
-                    //camerka2.SetActive(true);
-
                 }
             }
             else if(hit.collider.name == "UiLeft")
@@ -87,5 +86,20 @@ public class Teleportation : MonoBehaviour
                 consoleIDPanel.SetActive(false);
             }
         }   
+    }
+
+    private void OnTriggerEnter(Collider other) 
+    {
+        if(other.name == "triggerBB" && teleport)
+        {
+            tpObject.SetActive(false);
+            tpObject.transform.rotation = tpLocation.transform.rotation;
+            tpObject.transform.position = tpLocation.transform.position;
+            tpObject.SetActive(true);
+            spaceStantion.SetActive(true);
+            spaceShip.SetActive(true);
+            //camerka1.SetActive(false);
+            //camerka2.SetActive(true);
+        }
     }
 }
