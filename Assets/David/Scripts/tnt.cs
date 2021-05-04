@@ -31,6 +31,7 @@ public class tnt : MonoBehaviour
     public GameObject audioaaaa;
     public GameObject enemy;
     public GameObject enemyCol;
+    public GameObject tntUiMenuInfo;
     public Animation torchIdle;
     public Animation torchHit;
 
@@ -42,6 +43,7 @@ public class tnt : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        tntUiMenuInfo.SetActive(false);
         uIMenu1.SetActive(false);
         uIMenu2.SetActive(false);
         tnt2.SetActive(false);
@@ -66,6 +68,7 @@ public class tnt : MonoBehaviour
                 uIMenu1.SetActive(true);
                 if(Input.GetKeyDown(KeyCode.E))
                 {
+                    tntUiMenuInfo.SetActive(true);
                     audioaaa.SetActive(true);
                     uIMenu1.SetActive(true);
                     tnt1.SetActive(false); 
