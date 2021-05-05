@@ -11,8 +11,9 @@ public class Settings : MonoBehaviour
     public Slider sl;
 
     public AudioMixer mixer;
+    public AudioMixer musicMixer;
     public Slider sl1;
-
+    public Slider sl2;
     public void changeFS()
     {
         Screen.fullScreen = FS;
@@ -37,14 +38,21 @@ public class Settings : MonoBehaviour
                 text.text = "Ниски";
                 break;
             case 3:
-                text.text = "Високи";
+                text.text = "Средни";
                 break;
             case 4:
+                text.text = "Високи";
+                break;
+            case 5:
                 text.text = "Много високи";
+                break;
+            case 6:
+                text.text = "Ултра";
                 break;
         }
 
 
         mixer.SetFloat("volume", sl1.value);
+        musicMixer.SetFloat("volume", sl2.value);
     }
 }
