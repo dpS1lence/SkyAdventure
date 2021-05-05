@@ -19798,7 +19798,7 @@ GameObject:
   - component: {fileID: 674641768}
   - component: {fileID: 674641773}
   m_Layer: 0
-  m_Name: Circle (1)
+  m_Name: Circle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29858,6 +29858,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ca4c580b3888314581688fa46fb142d, type: 3}
+--- !u!1 &1043026165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7032787154409704351, guid: c5c678f58e9f04b49a87193e865b7b92,
+    type: 3}
+  m_PrefabInstance: {fileID: 6043263982152642537}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1043387288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101664,6 +101670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4977450284394514059}
+  - component: {fileID: 5645442478085561394}
   m_Layer: 0
   m_Name: PORTAL
   m_TagString: Untagged
@@ -101671,6 +101678,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5645442478085561394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5645442478085561393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301d1674c31440043b4a916e0a98377c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circle1: {fileID: 722280001438662576}
+  circle2: {fileID: 674641766}
+  fpsCam: {fileID: 1043026165}
+  range: 15
 --- !u!4 &5652507264322542950
 Transform:
   m_ObjectHideFlags: 0
