@@ -8021,6 +8021,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6532025512181261042, guid: 897260e7102e2354594b223d812d3ecc,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: fae067962e5934395be31c8aba4a3455,
+        type: 3}
     - target: {fileID: 6571694486408424322, guid: 897260e7102e2354594b223d812d3ecc,
         type: 3}
       propertyPath: player
@@ -50631,7 +50637,7 @@ AudioSource:
   m_GameObject: {fileID: 1185991304}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 028af1c9a7650f54685852878c81c80f,
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 5ab4742fa6ded024d90c451f2f0b4b0c,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 85878b226841121499239a93abec53d3, type: 3}
   m_PlayOnAwake: 1
