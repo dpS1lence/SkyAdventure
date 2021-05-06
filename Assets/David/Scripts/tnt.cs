@@ -168,11 +168,25 @@ public class tnt : MonoBehaviour
                     upperPanels.SetActive(true);
                 }
             }
-            else if(hit.collider.name == "UiLeft")
+            else if(hit.collider.name == "UiRight")
             {
                 if(Input.GetButton("Fire1"))
                 {
                     SceneManager.LoadScene("Maze");
+                }
+            }
+            else if(hit.collider.name == "UiLeft")
+            {
+                if(Input.GetButton("Fire1"))
+                {
+                    SceneManager.LoadScene("DavidScene");
+                }
+            }
+            else if(hit.collider.name == "UiMid")
+            {
+                if(Input.GetButton("Fire1"))
+                {
+                    SceneManager.LoadScene("DavidScene_2");
                 }
             }
             else
