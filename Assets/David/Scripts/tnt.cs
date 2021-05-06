@@ -1,16 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class tnt : MonoBehaviour
 {
 
     public GameObject tnt1;
     public GameObject tnt2;
+    public GameObject portalLL;
     public GameObject rocks;
+    public GameObject torch;
     public GameObject tntExplosionParticles;
     public GameObject tntExplosionParticles2;
     public GameObject player;
+    public GameObject playerTpLoc;
+    public GameObject spaceShipParticles;
     public GameObject fpsCam;
     public GameObject objectP;
     public GameObject raycastCam;
@@ -52,6 +57,11 @@ public class tnt : MonoBehaviour
     }
     private void Update() 
     {
+        if(Input.GetKeyDown(KeyCode.L))
+        {
+            a = 1;
+        }
+
         if(Input.GetMouseButtonDown(0))
         {
             //torchHit.Play();
@@ -145,6 +155,31 @@ public class tnt : MonoBehaviour
                 }
             }
         }
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        {
+            Debug.Log("Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range)");
+            if (hit.collider.name == "console")
+            {
+                Debug.Log("hit.collider.name ==");
+                uiConsole.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    uiConsole.SetActive(false);
+                    upperPanels.SetActive(true);
+                }
+            }
+            else if(hit.collider.name == "UiLeft")
+            {
+                if(Input.GetButton("Fire1"))
+                {
+                    SceneManager.LoadScene("Maze");
+                }
+            }
+            else
+            {
+                uiConsole.SetActive(false);
+            }
+        }   
 
         if (showInfo)
         {
@@ -152,8 +187,8 @@ public class tnt : MonoBehaviour
         }
         
     }
-
-
+    public GameObject uiConsole;
+    public GameObject upperPanels;
     public int k = 0;
 
     public GameObject info;
@@ -165,6 +200,8 @@ public class tnt : MonoBehaviour
     public GameObject backArrow;
     public GameObject nextArrow;
     public GameObject thickArrow;
+    public GameObject enemyAA;
+
 
     void Information()
     {
@@ -233,5 +270,18 @@ public class tnt : MonoBehaviour
         {
         }
 
+    }
+
+    private void OnTriggerEnter(Collider other) 
+    {
+        if(other.name == "Circle1")
+        {
+            player.transform.position = playerTpLoc.transform.position;
+            player.transform.rotation = playerTpLoc.transform.rotation;
+            torch.SetActive(false);
+            spaceShipParticles.SetActive(true);
+            portalLL.SetActive(false);
+            enemyAA.SetActive(false);
+        }
     }
 }
