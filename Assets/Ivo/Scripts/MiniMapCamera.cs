@@ -7,6 +7,8 @@ public class MiniMapCamera : MonoBehaviour
     public GameObject SceneManager;
     public GameObject player;
     public GameObject hoverCar;
+    public GameObject uiPanel1;
+    public GameObject uiPanel2;
     bool yes = false;
 
 
@@ -22,6 +24,8 @@ public class MiniMapCamera : MonoBehaviour
     {
         if (yes)
         {
+            uiPanel1.SetActive(false);
+            uiPanel2.SetActive(false);
             hoverCar.SetActive(true);
             //SceneManager.GetComponent<SceneManagement>().LoadScene("Maze");
         }

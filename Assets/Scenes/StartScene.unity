@@ -256,7 +256,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 993acac7ef2eb1446bbe6f50bacac8e7, type: 3}
+    m_Font: {fileID: 12800000, guid: 69fe1d4bc3446d04eb01df6e30777ded, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -612,7 +612,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 993acac7ef2eb1446bbe6f50bacac8e7, type: 3}
+    m_Font: {fileID: 12800000, guid: 69fe1d4bc3446d04eb01df6e30777ded, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -2641,7 +2641,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 993acac7ef2eb1446bbe6f50bacac8e7, type: 3}
+    m_Font: {fileID: 12800000, guid: 69fe1d4bc3446d04eb01df6e30777ded, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -5167,7 +5167,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 993acac7ef2eb1446bbe6f50bacac8e7, type: 3}
+    m_Font: {fileID: 12800000, guid: 69fe1d4bc3446d04eb01df6e30777ded, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -8696,6 +8696,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 442933808}
     m_Modifications:
+    - target: {fileID: 1898082978239848421, guid: 7cd0a8de03d3bd24bbfd04021043e4bb,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898240594504250217, guid: 7cd0a8de03d3bd24bbfd04021043e4bb,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898240594504250217, guid: 7cd0a8de03d3bd24bbfd04021043e4bb,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2760545328774037868, guid: 7cd0a8de03d3bd24bbfd04021043e4bb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8805,6 +8820,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LoadingBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2760545328774037869, guid: 7cd0a8de03d3bd24bbfd04021043e4bb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2869930375426894014, guid: 7cd0a8de03d3bd24bbfd04021043e4bb,
         type: 3}

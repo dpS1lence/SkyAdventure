@@ -1016,6 +1016,32 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6354075237929247080, guid: 897260e7102e2354594b223d812d3ecc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -290
+      objectReference: {fileID: 0}
+    - target: {fileID: 6532025512181261042, guid: 897260e7102e2354594b223d812d3ecc,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6532025512181261042, guid: 897260e7102e2354594b223d812d3ecc,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6532025512181261042, guid: 897260e7102e2354594b223d812d3ecc,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6532025512181261042, guid: 897260e7102e2354594b223d812d3ecc,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: fae067962e5934395be31c8aba4a3455,
+        type: 3}
     - target: {fileID: 6571694486298412024, guid: 897260e7102e2354594b223d812d3ecc,
         type: 3}
       propertyPath: m_IsActive
@@ -1175,6 +1201,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tutorial
       objectReference: {fileID: 0}
+    - target: {fileID: 3584901635315734423, guid: ca8fa391bf80d8a43aee1db2e7f37588,
+        type: 3}
+      propertyPath: m_Text
+      value: "\u041E\u0431\u0443\u0447\u0435\u043D\u0438\u0435\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 3584901635681615551, guid: ca8fa391bf80d8a43aee1db2e7f37588,
         type: 3}
       propertyPath: m_Name
@@ -1254,6 +1285,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.73757356
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669014172172899955, guid: ca8fa391bf80d8a43aee1db2e7f37588,
+        type: 3}
+      propertyPath: m_Text
+      value: "\u0417\u0430 \u0434\u0430 \u043E\u0442\u0432\u043E\u0440\u0438\u0448
+        \u043A\u043E\u043D\u0437\u043E\u043B\u0430\u0442\u0430, \u043D\u0430\u0442\u0438\u0441\u043D\u0438
+        \"E\""
       objectReference: {fileID: 0}
     - target: {fileID: 5669014172560105067, guid: ca8fa391bf80d8a43aee1db2e7f37588,
         type: 3}

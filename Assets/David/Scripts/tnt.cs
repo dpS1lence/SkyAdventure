@@ -217,6 +217,7 @@ public class tnt : MonoBehaviour
     public GameObject enemyAA;
 
 
+
     void Information()
     {
         Time.timeScale = 0;

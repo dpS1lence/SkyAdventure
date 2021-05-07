@@ -6779,7 +6779,7 @@ PrefabInstance:
     - target: {fileID: 1317938006276943664, guid: 28d5d42c2b1d86e43b9e64e380e9bcfe,
         type: 3}
       propertyPath: m_Text
-      value: "\u0417\u0430 \u0434\u0430 \u0432\u0437\u0435\u043C\u0435\u0448 \u0437\u043B\u0430\u0442\u043E\u0442\u043E
+      value: "\u0417\u0430 \u0434\u0430 \u0432\u0437\u0435\u043C\u0435\u0448 \u0437\u043B\u0430\u0442\u043E\u0442\u043E,
         \u043D\u0430\u0442\u0438\u0441\u043D\u0438 \"E\""
       objectReference: {fileID: 0}
     - target: {fileID: 1317938006276943664, guid: 28d5d42c2b1d86e43b9e64e380e9bcfe,
@@ -8021,12 +8021,32 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6354075237929247080, guid: 897260e7102e2354594b223d812d3ecc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -290
+      objectReference: {fileID: 0}
     - target: {fileID: 6532025512181261042, guid: 897260e7102e2354594b223d812d3ecc,
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: fae067962e5934395be31c8aba4a3455,
         type: 3}
+    - target: {fileID: 6532025512181261042, guid: 897260e7102e2354594b223d812d3ecc,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6532025512181261042, guid: 897260e7102e2354594b223d812d3ecc,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6532025512181261042, guid: 897260e7102e2354594b223d812d3ecc,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 6571694486408424322, guid: 897260e7102e2354594b223d812d3ecc,
         type: 3}
       propertyPath: player
@@ -66603,7 +66623,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "\u041D\u0430\u043C\u0435\u0440\u0438 \u0441\u043A\u0440\u0438\u0442\u043E\u0442\u043E
-        \u0441\u044A\u043A\u0440\u043E\u0432\u0438\u0449\u0435 \u0438\u0437 \u0442\u043E\u0437\u0438
+        \u0441\u044A\u043A\u0440\u043E\u0432\u0438\u0449\u0435 \u0432 \u0442\u043E\u0437\u0438
         \u043B\u0430\u0431\u0438\u0440\u0438\u043D\u0442."
       objectReference: {fileID: 0}
     - target: {fileID: 1317938006276943664, guid: 28d5d42c2b1d86e43b9e64e380e9bcfe,
@@ -71302,7 +71322,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "\u0410\u043A\u043E \u0438\u0441\u043A\u0430\u0448 \u0434\u0430 \u0438\u0437\u043B\u0435\u0437\u0435\u0448
-        \u043E\u0442 \u043D\u0438\u0432\u043E\u0442\u043E \u043D\u0430\u0442\u0438\u0441\u043D\u0438
+        \u043E\u0442 \u043D\u0438\u0432\u043E\u0442\u043E, \u043D\u0430\u0442\u0438\u0441\u043D\u0438
         \"E\""
       objectReference: {fileID: 0}
     - target: {fileID: 1317938006276943664, guid: 28d5d42c2b1d86e43b9e64e380e9bcfe,
